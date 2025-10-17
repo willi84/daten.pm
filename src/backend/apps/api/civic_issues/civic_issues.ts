@@ -114,7 +114,7 @@ export const getCivicIssuesData = () => {
     const data = getData('civic_issues', REQUEST_CONFIG, true);
     const items = data.items;
     const finalFile = `src/_data/repos/civic_issues.json`;
-    const coordFile = `src/_data/repos/coords_cache.json`;
+    const coordFile = `src/_data/coords_cache.json`;
     // console.log(items);
     const result: { items: any[] } = {
         items: [],
