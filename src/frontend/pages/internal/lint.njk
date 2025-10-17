@@ -1,0 +1,65 @@
+---
+layout: base.template.njk
+title: Welcome repo-quality
+navigation: true
+footer: true
+---
+{%- from "./../../templates/_setup/macros/component.macro.njk" import component -%}
+
+
+{% for item in lint.items %}
+
+{% set checksFAIL = item.details | filterByProp('type', 'ok', true) %}
+{% set checksERROR = item.details | filterByProp('type', 'error') %}
+{% set checksWARN = item.details | filterByProp('type', 'warning') %}
+{% set checksOK = item.details | filterByProp('type', 'ok') %}
+
+    <div class="container my-5 p-3 border rounded">
+        <h2 class="d-inline-block">{{ item.key }}</h2>
+        {% if item.valid %}
+            <button tXype="button" class="btn btn-sm btn-success d-inline-block">
+            Valid <span class="badge text-bg-light">{{item.details | filterByProp('type', 'ok') | length}}</span>
+            </button>
+            {% else %}
+            <button type="button" class="btn btn-sm btn-success d-inline-block">
+            OK <span class="badge text-bg-light">{{checksOK | len('records')}}</span>
+            </button>
+            <button type="button" class="btn btn-sm btn-warning d-inline-block">
+            WARN <span class="badge text-bg-light">{{checksWARN | len('records')}}</span>
+            </button>
+            <button type="button" class="btn btn-sm btn-danger d-inline-block">
+                Errors <span class="badge text-bg-light">{{checksERROR | len('records')}}</span>
+            </button>
+            {% endif %}
+            <p>{{ item.message }}</p>
+
+        {{
+            component("details", {
+                items: checksFAIL,
+                show: true,
+                id: "collapseErrors",
+                title: "failed checks",
+                translations: lint.translations,
+                no_items_message: "No detailed information available",
+                type_content: 'error',
+                type_button: 'link',
+                show_list_icon: true,
+                button_class_modifier: 'text-uppercase text-decoration-none text-dark'
+            })
+        }}
+        <hr />
+         {{
+            component("details", {
+                items: checksOK,
+                id: "collapseOK",
+                title: "successful checks",
+                translations: lint.translations,
+                no_items_message: "No detailed information available",
+                type_content: 'ok',
+                type_button: 'link',
+                show_list_icon: true,
+                button_class_modifier: 'text-uppercase text-decoration-none text-dark'
+            })
+        }}
+    </div>
+{% endfor %}

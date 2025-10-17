@@ -1,0 +1,18 @@
+
+{%
+    set counterHTML = "<span class='badge text-bg-light'>"+params.counter+"</span>" if params.type_button == "button" else "<span>("+ params.counter +")</span>"
+%}
+{{
+            component("button_link", {
+                class_modifier: params.class_modifier ,
+                type_content: params.type_content or "",
+                type_button: params.type_button or "button",
+                text: params.text,
+                collapseID: params.collapseID,
+                collapseShow: params.collapseShow,
+                image_url: params.image_url,
+                height: params.height,
+                width: params.width,
+                post_html: counterHTML | safeParamIf(params.counter)
+            })
+        }}

@@ -1,0 +1,33 @@
+---
+layout: base.template.njk
+title: Welcome to daten.pm
+navigation: true
+footer: true
+---
+ {%- from "./../templates/_setup/macros/component.macro.njk" import component -%}
+
+<div class="container-fluid my-5 text-center">
+    {{
+        component("image", {
+            image: main.logo.src,
+         class: "",
+         alt_prefix: main.logo.alt,
+         width: "25%",
+         height: "auto",
+         lazy: true
+       })
+    }}
+</div>
+{# Repos: {{repos.streets.data | dump}} #}
+
+
+{# list of streets #}
+<div data-search="repos">
+    <ul class="list-group">
+        {% for street, street_value in repos.streets.data %}
+            
+            <li class="list-group-item">{{street}} [{{street_value.type}}] </li>
+        {% endfor %}
+    </ul>
+</div>
+ 

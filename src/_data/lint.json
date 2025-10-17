@@ -1,0 +1,112 @@
+{
+    "items": [
+        {
+            "details": {
+                "missing": {
+                    "type": "error",
+                    "message": "Missing component",
+                    "records": [
+                        "docs",
+                        "_docs",
+                        "format",
+                        "gitlab",
+                        "accuracy",
+                        "compare",
+                        "is",
+                        "item",
+                        "props",
+                        "toContainItem",
+                        "checks",
+                        "healthcheck",
+                        "lint",
+                        "opencode",
+                        "css-icon",
+                        "list",
+                        "badge",
+                        "details",
+                        "internal",
+                        "postcss",
+                        "linter",
+                        "jsdoc-format",
+                        "utils"
+                    ]
+                },
+                "extra": {
+                    "type": "error",
+                    "message": "Extra component",
+                    "records": [
+                        "figma",
+                        "test_data",
+                        "app",
+                        "editor",
+                        "env",
+                        "platform",
+                        "system",
+                        "user",
+                        "mock-cmd",
+                        "mock_app",
+                        "mock_env",
+                        "mock_terminal"
+                    ]
+                },
+                "same": {
+                    "type": "ok",
+                    "message": "Same component",
+                    "records": [
+                        "cmd",
+                        "colors",
+                        "fs",
+                        "markdown",
+                        "regex",
+                        "match",
+                        "tools",
+                        "index",
+                        "components",
+                        "css",
+                        "tech",
+                        "image",
+                        "link",
+                        "button_link",
+                        "profile",
+                        "search",
+                        "footer",
+                        "header",
+                        "navigation",
+                        "main",
+                        "macros",
+                        "templates",
+                        "shortcodes"
+                    ]
+                },
+                "diff": {
+                    "type": "warning",
+                    "message": "Different component",
+                    "records": [
+                        "_data",
+                        "analyze",
+                        "http",
+                        "convert",
+                        "log",
+                        "mock",
+                        "api",
+                        "atomic",
+                        "settings",
+                        "config",
+                        "assets",
+                        "button",
+                        "pages",
+                        "filters"
+                    ]
+                }
+            },
+            "valid": false,
+            "category": "components",
+            "key": "component-names",
+            "message": "check for missing or extra or duplicate component names"
+        }
+    ],
+    "translations": {
+        "ok": "success",
+        "error": "danger"
+    }
+}

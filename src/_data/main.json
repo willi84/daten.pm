@@ -1,0 +1,18 @@
+{
+    "greeting": "Hello, World!",
+    "logo": {
+        "src": "/assets/logo.svg",
+        "alt": "Logo Image"
+    },
+    "footer": {
+        "text": "Made with ❤️ by Robert Willemelis"
+    },
+    "links": [
+        {
+            "text": "Dashboard",
+            "url": "dashboard",
+            "type": "button"
+        }
+
+    ]
+}

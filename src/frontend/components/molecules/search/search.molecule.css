@@ -1,0 +1,46 @@
+.search__value{
+    color: yellowgreen;
+    font-weight: bold;
+}
+.search-match{
+    background-color: rgb(230, 161, 33);
+}
+.search__area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-container {
+    width: 100%;
+    max-width: 600px;
+}
+.form-control {
+    height: 50px;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.search__result{
+    color: green;
+}
+.search__info--hidden{
+    opacity: 0;
+}
+[data-hidden="true"] {
+    display: none;
+}
+[data-active="false"] {
+    opacity: 0.7;
+}
+
+.skill-search,
+.skill-search.hidden + .skill-value {
+    display: inline-block;
+    /* display: auto; */
+}
+.skill-search + .skill-value {
+    display: none;
+}
+/* .is-visible{
+    background-color: rgb(214, 1, 132);
+} */

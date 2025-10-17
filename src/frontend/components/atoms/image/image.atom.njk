@@ -1,0 +1,14 @@
+{# VARIABLES #}
+{% set item = params.item %}
+{% set alt_text = 'alt="' + params.alt_prefix + item.name +'"' %}
+{% set lazy_loading = 'loading="lazy" ' | safe if params.lazy else '' %}
+{% set width = 'width="' + params.width + '"' %}
+{% set height = 'height="' + params.height + '"' %}
+{% set image_url = params.image or item.image %}
+{% set class = params.class or "" %}
+
+{# TEMPLATE #}
+<img data-component="image.atom"
+        class="{{class}} x"
+        src="{{image_url}}"
+        {{alt_text | safe}} {{width | safe}} {{height | safe}} {{lazy_loading | safe}}>

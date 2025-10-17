@@ -1,0 +1,33 @@
+---
+layout: base.template.njk
+title: Welcome repo-quality
+navigation: true
+footer: true
+---
+{%- from "./../templates/_setup/macros/component.macro.njk" import component -%}
+ <div class="container-fluid my-5 text-center">
+     {{
+           component("image", {
+             image: main.logo.src,
+             class: "",
+             alt_prefix: main.logo.alt,
+             width: "50%",
+             height: "auto",
+             lazy: true
+           })
+         }}
+ </div>
+
+<div class="container my-5 text-center">
+    {% for link in main.links %}
+    {% set disabled = (link.disabled is defined and link.disabled == true) or (link.url is not defined) %}
+        {{
+            component("button_link", {
+                "type": link.type or "link",
+                "text": link.text,
+                "url": link.url,
+                "disabled": disabled
+            })
+        }}
+    {% endfor %}
+</div>

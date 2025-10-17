@@ -1,0 +1,1602 @@
+[
+  {
+    "id": 6191,
+    "name": "Schema GeoJSON",
+    "webUrl": "https://gitlab.opencode.de/odsh-daten-schemata/schema-geojson",
+    "description": "No description",
+    "createdAt": "2025-08-05T13:13:11.317Z",
+    "lastActivityAt": "2025-08-05T13:13:11.209Z"
+  },
+  {
+    "id": 6190,
+    "name": "GenericTwinFramework",
+    "webUrl": "https://gitlab.opencode.de/connected-urban-twins/generictwin/generictwinframework",
+    "description": "No description",
+    "createdAt": "2025-08-05T10:09:27.010Z",
+    "lastActivityAt": "2025-08-05T10:09:26.934Z"
+  },
+  {
+    "id": 6185,
+    "name": "Material UI Icons for KERN UX",
+    "webUrl": "https://gitlab.opencode.de/joschka/material-ui-icons-for-kern-ux",
+    "description": "https://gitlab.opencode.de/joschka/material-ui-icons-for-kern-ux/-/raw/main/list.css?ref_type=heads",
+    "createdAt": "2025-08-04T17:10:37.533Z",
+    "lastActivityAt": "2025-08-05T18:04:01.597Z"
+  },
+  {
+    "id": 6180,
+    "name": "FUK-Info-Dashboard",
+    "webUrl": "https://gitlab.opencode.de/OC000079274953/FUK-Info-Dashboard",
+    "description": "Forstliche Umweltkontrolle",
+    "createdAt": "2025-08-04T09:15:54.947Z",
+    "lastActivityAt": "2025-08-04T09:15:53.346Z"
+  },
+  {
+    "id": 6179,
+    "name": "cut-superset-wfs-dialect",
+    "webUrl": "https://gitlab.opencode.de/connected-urban-twins/cut-superset-wfs-dialect",
+    "description": "No description",
+    "createdAt": "2025-08-04T08:50:59.899Z",
+    "lastActivityAt": "2025-08-05T08:06:53.822Z"
+  },
+  {
+    "id": 6175,
+    "name": "open-data",
+    "webUrl": "https://gitlab.opencode.de/energieautarkes-wohnquartier/open-data",
+    "description": "No description",
+    "createdAt": "2025-08-04T07:09:55.592Z",
+    "lastActivityAt": "2025-08-04T07:09:55.501Z"
+  },
+  {
+    "id": 6174,
+    "name": "backend",
+    "webUrl": "https://gitlab.opencode.de/energieautarkes-wohnquartier/backend",
+    "description": "No description",
+    "createdAt": "2025-08-04T07:09:33.651Z",
+    "lastActivityAt": "2025-08-04T07:09:33.568Z"
+  },
+  {
+    "id": 6173,
+    "name": "frontend",
+    "webUrl": "https://gitlab.opencode.de/energieautarkes-wohnquartier/frontend",
+    "description": "No description",
+    "createdAt": "2025-08-04T07:08:42.141Z",
+    "lastActivityAt": "2025-08-04T07:08:42.035Z"
+  },
+  {
+    "id": 6166,
+    "name": "FUK-proxy",
+    "webUrl": "https://gitlab.opencode.de/lfe/fuk/fuk-proxy",
+    "description": "No description",
+    "createdAt": "2025-08-03T09:56:25.723Z",
+    "lastActivityAt": "2025-08-03T12:32:48.931Z"
+  },
+  {
+    "id": 6155,
+    "name": "corporate-design",
+    "webUrl": "https://gitlab.opencode.de/oc000056025066/corporate-design",
+    "description": "No description",
+    "createdAt": "2025-07-31T13:23:47.331Z",
+    "lastActivityAt": "2025-08-05T07:08:35.663Z"
+  },
+  {
+    "id": 6152,
+    "name": "Digitalisierung eines Sekundärwärmenetzes",
+    "webUrl": "https://gitlab.opencode.de/OC000011068002/digitalisierung-eines-sekundaerwaermenetzes",
+    "description": "No description",
+    "createdAt": "2025-07-31T12:22:10.775Z",
+    "lastActivityAt": "2025-07-31T12:22:10.683Z"
+  },
+  {
+    "id": 6149,
+    "name": "DVeC",
+    "webUrl": "https://gitlab.opencode.de/eichbehoerden/dvec",
+    "description": "\"Digitaler Eichschein (DVeC)\" als Pendant zum  \"Digitalen Kalibrierschein (DCC)\" und dem \"Digitalen Konformitätsbewertungszertifikat (DCoC)\". Eine Grundlage für \r\nmaschinenlesbare Zertifikate in der Metrologie.",
+    "createdAt": "2025-07-31T11:15:24.446Z",
+    "lastActivityAt": "2025-08-04T08:41:10.242Z"
+  },
+  {
+    "id": 6142,
+    "name": "KERN – Plain-CSS-HTML-Kit",
+    "webUrl": "https://gitlab.opencode.de/joschka/kern-ux-plain",
+    "description": "Implementation des KERN Design-Systems in CSS/HTML.",
+    "createdAt": "2025-07-30T12:39:31.026Z",
+    "lastActivityAt": "2025-07-30T12:39:30.913Z"
+  },
+  {
+    "id": 6135,
+    "name": "style-dictionary",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/style-dictionary",
+    "description": "Angie Design System's design tokens (npm package) Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/style-dictionary",
+    "createdAt": "2025-07-29T14:04:35.156Z",
+    "lastActivityAt": "2025-07-29T14:04:34.299Z"
+  },
+  {
+    "id": 6134,
+    "name": "a2j-kommunikationsplattform",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/digitale-justiz/a2j-kommunikationsplattform",
+    "description": "Erprobung einer Kommunikationsplattform im zivilgerichtlichen Online-Verfahren - Testing a communication platform in online civil court proceedings Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/a2j-kommunikationsplattform",
+    "createdAt": "2025-07-29T14:04:31.702Z",
+    "lastActivityAt": "2025-08-05T04:04:12.528Z"
+  },
+  {
+    "id": 6133,
+    "name": "digitalcheck-dito",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/digitalcheck/digitalcheck-dito",
+    "description": "Digitalcheck Digital Touchpoint Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/digitalcheck-dito",
+    "createdAt": "2025-07-29T14:04:31.741Z",
+    "lastActivityAt": "2025-08-04T04:04:32.116Z"
+  },
+  {
+    "id": 6132,
+    "name": "ris-search",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/digitalisierung-des-rechts/ris-search",
+    "description": "RIS service to search norms and case law data Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/ris-search",
+    "createdAt": "2025-07-29T14:04:31.606Z",
+    "lastActivityAt": "2025-07-29T14:04:30.924Z"
+  },
+  {
+    "id": 6131,
+    "name": "ris-norms-migration-import",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/digitalisierung-des-rechts/ris-norms-migration-import",
+    "description": "Job for importing the migrated norms from the migration tables into the norms tables Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/ris-norms-migration-import",
+    "createdAt": "2025-07-29T14:04:30.724Z",
+    "lastActivityAt": "2025-07-30T04:04:06.725Z"
+  },
+  {
+    "id": 6130,
+    "name": "useid-app-android",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/digitale-identit-ten/useid-app-android",
+    "description": "Android client for the UseID project Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/useid-app-android",
+    "createdAt": "2025-07-29T14:04:30.151Z",
+    "lastActivityAt": "2025-08-01T04:04:25.759Z"
+  },
+  {
+    "id": 6129,
+    "name": "hack-jira-cfd",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/hack-jira-cfd",
+    "description": "Get more info on how work flows through a Jira board Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/hack-jira-cfd",
+    "createdAt": "2025-07-29T14:04:28.252Z",
+    "lastActivityAt": "2025-07-30T04:04:10.604Z"
+  },
+  {
+    "id": 6128,
+    "name": "ris-norms",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/digitalisierung-des-rechts/ris-norms",
+    "description": "RIS-Norms mono repository Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/ris-norms",
+    "createdAt": "2025-07-29T14:04:26.809Z",
+    "lastActivityAt": "2025-08-02T04:04:37.996Z"
+  },
+  {
+    "id": 6127,
+    "name": "steuerlotse",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/steuern/steuerlotse",
+    "description": "This is the code repository of the Steuerlotse by DigitalService. Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/steuerlotse",
+    "createdAt": "2025-07-29T14:04:26.217Z",
+    "lastActivityAt": "2025-07-29T14:04:26.056Z"
+  },
+  {
+    "id": 6126,
+    "name": "grundsteuer",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/steuern/grundsteuer",
+    "description": "Grundsteuererklärung für Privateigentum Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/grundsteuer",
+    "createdAt": "2025-07-29T14:04:26.146Z",
+    "lastActivityAt": "2025-07-29T14:04:25.994Z"
+  },
+  {
+    "id": 6125,
+    "name": "digitalcheck-content",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/digitalcheck/digitalcheck-content",
+    "description": "Content of the Digitalcheck documents Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/digitalcheck-content",
+    "createdAt": "2025-07-29T14:04:26.146Z",
+    "lastActivityAt": "2025-07-29T14:04:26.062Z"
+  },
+  {
+    "id": 6124,
+    "name": "erica",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/steuern/erica",
+    "description": "Erica service for communicating with ELSTER via ERiC Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/erica",
+    "createdAt": "2025-07-29T14:04:25.989Z",
+    "lastActivityAt": "2025-07-29T14:04:25.918Z"
+  },
+  {
+    "id": 6123,
+    "name": "terraform-modules",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/terraform-modules",
+    "description": "Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/terraform-modules",
+    "createdAt": "2025-07-29T14:04:25.227Z",
+    "lastActivityAt": "2025-07-30T04:04:10.626Z"
+  },
+  {
+    "id": 6122,
+    "name": "a2j-erv-wrapper",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/digitale-justiz/a2j-erv-wrapper",
+    "description": "Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/a2j-erv-wrapper",
+    "createdAt": "2025-07-29T14:04:24.468Z",
+    "lastActivityAt": "2025-07-29T14:04:23.541Z"
+  },
+  {
+    "id": 6121,
+    "name": "webapp-endpoint-scan",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/webapp-endpoint-scan",
+    "description": "TLS and HTTP secure headers scans for webapps. Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/webapp-endpoint-scan",
+    "createdAt": "2025-07-29T14:04:24.483Z",
+    "lastActivityAt": "2025-07-31T04:03:58.103Z"
+  },
+  {
+    "id": 6120,
+    "name": "ris-norms-ldml-schema-extensions",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/digitalisierung-des-rechts/ris-norms-ldml-schema-extensions",
+    "description": "Shared schema files for extending the LDML standard    Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/ris-norms-ldml-schema-extensions",
+    "createdAt": "2025-07-29T14:04:23.807Z",
+    "lastActivityAt": "2025-07-29T14:04:23.566Z"
+  },
+  {
+    "id": 6119,
+    "name": "angie",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/angie",
+    "description": "Angie Design System (Storybook docs + Tailwind plugin npm package) Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/angie",
+    "createdAt": "2025-07-29T14:04:23.727Z",
+    "lastActivityAt": "2025-07-29T14:04:23.663Z"
+  },
+  {
+    "id": 6118,
+    "name": "wie-viele-menschen",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/accessibility/wie-viele-menschen",
+    "description": "A small website that displays how many of your users in Germany statistically have some type of disability. Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/wie-viele-menschen",
+    "createdAt": "2025-07-29T14:04:23.072Z",
+    "lastActivityAt": "2025-07-29T14:04:22.884Z"
+  },
+  {
+    "id": 6117,
+    "name": "useid-eservice-example",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/digitale-identit-ten/useid-eservice-example",
+    "description": "An example application for an eService integrating with the UseID identity solution Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/useid-eservice-example",
+    "createdAt": "2025-07-29T14:04:22.199Z",
+    "lastActivityAt": "2025-07-29T14:04:22.137Z"
+  },
+  {
+    "id": 6116,
+    "name": "digitalcheck-data",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/digitalcheck/digitalcheck-data",
+    "description": "This repository contains scripts to automatically extract data from Digitalcheck documents (PDF) to be used for evaluation and analysis. Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/digitalcheck-data",
+    "createdAt": "2025-07-29T14:04:20.193Z",
+    "lastActivityAt": "2025-08-03T04:04:14.177Z"
+  },
+  {
+    "id": 6115,
+    "name": "useid-app-ios",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/digitale-identit-ten/useid-app-ios",
+    "description": "iOS client for BundesIdent Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/useid-app-ios",
+    "createdAt": "2025-07-29T14:04:19.999Z",
+    "lastActivityAt": "2025-07-29T14:04:19.900Z"
+  },
+  {
+    "id": 6114,
+    "name": "useid-eservice-sdk",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/digitale-identit-ten/useid-eservice-sdk",
+    "description": "SDK for eService Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/useid-eservice-sdk",
+    "createdAt": "2025-07-29T14:04:19.918Z",
+    "lastActivityAt": "2025-07-29T14:04:19.695Z"
+  },
+  {
+    "id": 6113,
+    "name": "kern-ux-tailwind-theme",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/kern-ux-tailwind-theme",
+    "description": "Tailwind theme with KERN-UX design tokens Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/kern-ux-tailwind-theme",
+    "createdAt": "2025-07-29T14:04:19.825Z",
+    "lastActivityAt": "2025-07-29T14:04:19.749Z"
+  },
+  {
+    "id": 6112,
+    "name": "useid-backend-service",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/digitale-identit-ten/useid-backend-service",
+    "description": "Backend and Widget Service for UseID Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/useid-backend-service",
+    "createdAt": "2025-07-29T14:04:19.592Z",
+    "lastActivityAt": "2025-07-29T14:04:19.438Z"
+  },
+  {
+    "id": 6111,
+    "name": "useid-architecture",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/digitale-identit-ten/useid-architecture",
+    "description": "Architecture of the UseID project Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/useid-architecture",
+    "createdAt": "2025-07-29T14:04:17.989Z",
+    "lastActivityAt": "2025-07-29T14:04:17.192Z"
+  },
+  {
+    "id": 6110,
+    "name": "a2j-rechtsantragstelle-strapi",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/digitale-justiz/a2j-rechtsantragstelle-strapi",
+    "description": "Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/a2j-rechtsantragstelle-strapi",
+    "createdAt": "2025-07-29T14:04:17.902Z",
+    "lastActivityAt": "2025-07-30T04:04:09.125Z"
+  },
+  {
+    "id": 6109,
+    "name": "public_documents",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/public_documents",
+    "description": "Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/public_documents",
+    "createdAt": "2025-07-29T14:04:17.962Z",
+    "lastActivityAt": "2025-07-29T14:04:17.350Z"
+  },
+  {
+    "id": 6108,
+    "name": "useid-documentation",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/digitale-identit-ten/useid-documentation",
+    "description": "Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/useid-documentation",
+    "createdAt": "2025-07-29T14:04:17.834Z",
+    "lastActivityAt": "2025-07-29T14:04:17.246Z"
+  },
+  {
+    "id": 6107,
+    "name": "icons",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/icons",
+    "description": "Material UI icons as React components (npm package) Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/icons",
+    "createdAt": "2025-07-29T14:04:17.781Z",
+    "lastActivityAt": "2025-08-03T04:04:16.453Z"
+  },
+  {
+    "id": 6106,
+    "name": "ris-adm-vwv",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/digitalisierung-des-rechts/ris-adm-vwv",
+    "description": "RIS ADM / VwV mono repo Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/ris-adm-vwv",
+    "createdAt": "2025-07-29T14:04:17.279Z",
+    "lastActivityAt": "2025-07-29T14:04:17.004Z"
+  },
+  {
+    "id": 6105,
+    "name": "a2j-rechtsantragstelle",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/digitale-justiz/a2j-rechtsantragstelle",
+    "description": "⚖️ Zugang zu Recht - Access to Justice - A2J ⚖️ Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/a2j-rechtsantragstelle",
+    "createdAt": "2025-07-29T14:04:17.223Z",
+    "lastActivityAt": "2025-08-03T04:04:54.363Z"
+  },
+  {
+    "id": 6104,
+    "name": "ris-backend-service",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/digitalisierung-des-rechts/ris-backend-service",
+    "description": "RIS Caselaw Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/ris-backend-service",
+    "createdAt": "2025-07-29T14:04:17.240Z",
+    "lastActivityAt": "2025-07-29T14:04:17.027Z"
+  },
+  {
+    "id": 6103,
+    "name": "ris-ui",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/digitalisierung-des-rechts/ris-ui",
+    "description": "Component library for NeuRIS Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/ris-ui",
+    "createdAt": "2025-07-29T14:04:17.076Z",
+    "lastActivityAt": "2025-08-05T04:04:10.505Z"
+  },
+  {
+    "id": 6102,
+    "name": "digitalcheck-beispiele",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/digitalcheck/digitalcheck-beispiele",
+    "description": "Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/digitalcheck-beispiele",
+    "createdAt": "2025-07-29T14:04:16.914Z",
+    "lastActivityAt": "2025-07-29T14:04:16.792Z"
+  },
+  {
+    "id": 5997,
+    "name": "DUFLOR",
+    "webUrl": "https://gitlab.opencode.de/OC000034877598/duflor",
+    "description": "No description",
+    "createdAt": "2025-07-29T12:16:43.598Z",
+    "lastActivityAt": "2025-07-29T13:17:02.073Z"
+  },
+  {
+    "id": 5995,
+    "name": "KollOM-Fit Report",
+    "webUrl": "https://gitlab.opencode.de/opendva/kollomfit-report",
+    "description": "No description",
+    "createdAt": "2025-07-29T10:07:05.214Z",
+    "lastActivityAt": "2025-07-29T10:07:04.626Z"
+  },
+  {
+    "id": 5991,
+    "name": "BSRAP - Knowledge Graph Visualization",
+    "webUrl": "https://gitlab.opencode.de/opendva/bsrap-knowledge-graph-visualization",
+    "description": "No description",
+    "createdAt": "2025-07-29T07:44:17.616Z",
+    "lastActivityAt": "2025-07-29T09:48:50.845Z"
+  },
+  {
+    "id": 5987,
+    "name": "gitlab-profile",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/servicestandard/gitlab-profile",
+    "description": "No description",
+    "createdAt": "2025-07-28T12:39:53.013Z",
+    "lastActivityAt": "2025-07-28T12:39:52.909Z"
+  },
+  {
+    "id": 5986,
+    "name": "bfj-welcome",
+    "webUrl": "https://gitlab.opencode.de/bfj/gitlab-profile",
+    "description": "Unser \"Welcome Repository\" enthält keinen konkreten Code, sondern dient zur Orientierung, Information und Strukturierung. Es bietet einen Einstiegspunkt und erklärt unseren Hintergrund. Bitte beachten Sie ggfs. vorgeschlagene generelle Konventionen vom BfJ.",
+    "createdAt": "2025-07-28T11:40:58.813Z",
+    "lastActivityAt": "2025-07-28T12:07:04.146Z"
+  },
+  {
+    "id": 5889,
+    "name": "mach-everwaltung-oce",
+    "webUrl": "https://gitlab.opencode.de/sh/digitalhub-sh/landesprogramm-offene-innovationen/mach-e-verwaltung/mach-everwaltung-oce",
+    "description": "No description",
+    "createdAt": "2025-07-25T15:33:09.737Z",
+    "lastActivityAt": "2025-07-25T15:33:09.658Z"
+  },
+  {
+    "id": 5888,
+    "name": "alfresco-community-share",
+    "webUrl": "https://gitlab.opencode.de/sh/digitalhub-sh/landesprogramm-offene-innovationen/mach-e-verwaltung/alfresco-community-share",
+    "description": "No description",
+    "createdAt": "2025-07-25T14:21:26.918Z",
+    "lastActivityAt": "2025-07-25T15:26:26.930Z"
+  },
+  {
+    "id": 5887,
+    "name": "alfresco-community-repo",
+    "webUrl": "https://gitlab.opencode.de/sh/digitalhub-sh/landesprogramm-offene-innovationen/mach-e-verwaltung/alfresco-community-repo",
+    "description": "No description",
+    "createdAt": "2025-07-25T14:02:38.255Z",
+    "lastActivityAt": "2025-07-25T14:02:38.180Z"
+  },
+  {
+    "id": 5885,
+    "name": "pbd-toolkit",
+    "webUrl": "https://gitlab.opencode.de/hbdi/pbd-toolkit",
+    "description": "Bei dem pbD-Toolkit handelt es sich um ein Tool, das der Hessische Beauftragte für Datenschutz und Informationsfreiheit (HBDI) programmiert hat, um große Datenmenge zu durchsuchen. Das Tool soll dabei Hinweise dafür suchen, ob in diesen Datenmengen personenbezogene Daten enthalten sein könnten. Ein Beispiel für große Datenmengen, die der HBDI damit durchsucht, sind Daten-Leaks, die etwa im sogenannten Darknet veröffentlicht werden.",
+    "createdAt": "2025-07-25T11:18:52.801Z",
+    "lastActivityAt": "2025-07-29T12:02:12.413Z"
+  },
+  {
+    "id": 5884,
+    "name": "DevGuard SBOM Frontend",
+    "webUrl": "https://gitlab.opencode.de/open-code/badgebackend/devguard-sbom-frontend",
+    "description": "No description",
+    "createdAt": "2025-07-25T10:54:35.575Z",
+    "lastActivityAt": "2025-07-25T13:25:32.159Z"
+  },
+  {
+    "id": 5883,
+    "name": "osiv2-postfach",
+    "webUrl": "https://gitlab.opencode.de/sh/zit/ozg-cloud/app/osiv2-postfach",
+    "description": "No description",
+    "createdAt": "2025-07-25T07:36:28.145Z",
+    "lastActivityAt": "2025-08-01T10:50:33.461Z"
+  },
+  {
+    "id": 5881,
+    "name": "Frontend",
+    "webUrl": "https://gitlab.opencode.de/dmoch/frontend",
+    "description": "User-Interface in Svelte",
+    "createdAt": "2025-07-24T14:00:33.728Z",
+    "lastActivityAt": "2025-07-24T14:00:32.877Z"
+  },
+  {
+    "id": 5868,
+    "name": "Dokumentation",
+    "webUrl": "https://gitlab.opencode.de/f13-zimmern/dokumentation",
+    "description": "No description",
+    "createdAt": "2025-07-23T14:36:22.191Z",
+    "lastActivityAt": "2025-07-23T14:36:22.087Z"
+  },
+  {
+    "id": 5867,
+    "name": "Community",
+    "webUrl": "https://gitlab.opencode.de/f13-zimmern/community",
+    "description": "No description",
+    "createdAt": "2025-07-23T14:35:13.087Z",
+    "lastActivityAt": "2025-07-23T14:35:12.853Z"
+  },
+  {
+    "id": 5866,
+    "name": "Community",
+    "webUrl": "https://gitlab.opencode.de/hightower/community",
+    "description": "No description",
+    "createdAt": "2025-07-23T14:32:54.252Z",
+    "lastActivityAt": "2025-07-23T14:32:54.098Z"
+  },
+  {
+    "id": 5864,
+    "name": "openDesk",
+    "webUrl": "https://gitlab.opencode.de/itzbundfabianhardt/opendesk",
+    "description": "Helmfile / Helm chart-based deployment automation for openDesk Community and Enterprise Edition.",
+    "createdAt": "2025-07-23T14:08:17.251Z",
+    "lastActivityAt": "2025-07-23T14:08:17.151Z"
+  },
+  {
+    "id": 5862,
+    "name": "iamock",
+    "webUrl": "https://gitlab.opencode.de/bmi/e-gesetzgebung/iamock",
+    "description": "No description",
+    "createdAt": "2025-07-23T12:37:43.420Z",
+    "lastActivityAt": "2025-07-25T16:19:36.248Z"
+  },
+  {
+    "id": 5858,
+    "name": "KERN – Angular-Kit ",
+    "webUrl": "https://gitlab.opencode.de/OC000088229776/angular-kit",
+    "description": "Community Projekt: Implementation des KERN Design-Systems für Angular.",
+    "createdAt": "2025-07-23T09:09:20.002Z",
+    "lastActivityAt": "2025-07-30T17:39:22.796Z"
+  },
+  {
+    "id": 5854,
+    "name": "KERN – React-Kit",
+    "webUrl": "https://gitlab.opencode.de/joschka/kern-react-kit",
+    "description": "Community Projekt: Implementation des KERN Design-Systems für React.",
+    "createdAt": "2025-07-22T14:46:15.885Z",
+    "lastActivityAt": "2025-07-24T15:15:29.518Z"
+  },
+  {
+    "id": 5849,
+    "name": "Matrix G2C-Pilot Project Template",
+    "webUrl": "https://gitlab.opencode.de/fitko/matrix-g2x/matrix-g2c-pilot-project-template",
+    "description": "Repository template for starting new software projects.",
+    "createdAt": "2025-07-22T10:54:01.284Z",
+    "lastActivityAt": "2025-07-24T16:58:35.068Z"
+  },
+  {
+    "id": 5847,
+    "name": "zufish-organisationen",
+    "webUrl": "https://gitlab.opencode.de/odsh-daten-schemata/staatskanzlei/zufish-organisationen",
+    "description": "No description",
+    "createdAt": "2025-07-22T09:59:13.042Z",
+    "lastActivityAt": "2025-07-22T09:59:12.914Z"
+  },
+  {
+    "id": 5846,
+    "name": "zufish-gebiete",
+    "webUrl": "https://gitlab.opencode.de/odsh-daten-schemata/staatskanzlei/zufish-gebiete",
+    "description": "No description",
+    "createdAt": "2025-07-22T09:58:33.751Z",
+    "lastActivityAt": "2025-07-22T09:58:33.601Z"
+  },
+  {
+    "id": 5845,
+    "name": "wirtschaftsduenger",
+    "webUrl": "https://gitlab.opencode.de/odsh-daten-schemata/staatskanzlei/wirtschaftsduenger",
+    "description": "No description",
+    "createdAt": "2025-07-22T09:57:10.090Z",
+    "lastActivityAt": "2025-07-22T09:57:09.987Z"
+  },
+  {
+    "id": 5844,
+    "name": "verkehrsunfaelle",
+    "webUrl": "https://gitlab.opencode.de/odsh-daten-schemata/staatskanzlei/verkehrsunfaelle",
+    "description": "No description",
+    "createdAt": "2025-07-22T09:54:37.095Z",
+    "lastActivityAt": "2025-07-22T09:54:36.999Z"
+  },
+  {
+    "id": 5843,
+    "name": "timestamp-area-sensor-value",
+    "webUrl": "https://gitlab.opencode.de/odsh-daten-schemata/staatskanzlei/timestamp-area-sensor-value",
+    "description": "No description",
+    "createdAt": "2025-07-22T09:53:23.564Z",
+    "lastActivityAt": "2025-07-22T09:53:23.326Z"
+  },
+  {
+    "id": 5842,
+    "name": "timestamp-area-sensor-in-out",
+    "webUrl": "https://gitlab.opencode.de/odsh-daten-schemata/staatskanzlei/timestamp-area-sensor-in-out",
+    "description": "No description",
+    "createdAt": "2025-07-22T09:46:20.689Z",
+    "lastActivityAt": "2025-07-22T09:46:20.383Z"
+  },
+  {
+    "id": 5840,
+    "name": "2016_sozialplanung_indikatoren_werte_gesamt",
+    "webUrl": "https://gitlab.opencode.de/odsh-daten-schemata/staatskanzlei/2016_sozialplanung_indikatoren_werte_gesamt",
+    "description": "No description",
+    "createdAt": "2025-07-22T09:39:25.686Z",
+    "lastActivityAt": "2025-07-22T09:39:25.603Z"
+  },
+  {
+    "id": 5839,
+    "name": "siedlungsabfallaufkommen-nach-bilanznummer-und-entsorgungsweg",
+    "webUrl": "https://gitlab.opencode.de/odsh-daten-schemata/staatskanzlei/siedlungsabfallaufkommen-nach-bilanznummer-und-entsorgungsweg",
+    "description": "No description",
+    "createdAt": "2025-07-22T09:32:08.143Z",
+    "lastActivityAt": "2025-07-22T09:32:07.998Z"
+  },
+  {
+    "id": 5838,
+    "name": "siedlungsabfallaufkommen-nach-avv-schluesseln",
+    "webUrl": "https://gitlab.opencode.de/odsh-daten-schemata/staatskanzlei/siedlungsabfallaufkommen-nach-avv-schluesseln",
+    "description": "No description",
+    "createdAt": "2025-07-22T09:31:07.724Z",
+    "lastActivityAt": "2025-07-22T09:31:07.584Z"
+  },
+  {
+    "id": 5837,
+    "name": "mitfahrbank",
+    "webUrl": "https://gitlab.opencode.de/odsh-daten-schemata/staatskanzlei/mitfahrbank",
+    "description": "No description",
+    "createdAt": "2025-07-22T09:29:46.123Z",
+    "lastActivityAt": "2025-07-22T09:29:46.030Z"
+  },
+  {
+    "id": 5836,
+    "name": "pegel-wasserstand",
+    "webUrl": "https://gitlab.opencode.de/odsh-daten-schemata/staatskanzlei/pegel-wasserstand",
+    "description": "No description",
+    "createdAt": "2025-07-22T09:28:32.350Z",
+    "lastActivityAt": "2025-07-22T09:28:32.250Z"
+  },
+  {
+    "id": 5835,
+    "name": "pegel-messungen",
+    "webUrl": "https://gitlab.opencode.de/odsh-daten-schemata/staatskanzlei/pegel-messungen",
+    "description": "No description",
+    "createdAt": "2025-07-22T09:27:36.660Z",
+    "lastActivityAt": "2025-07-22T09:27:36.542Z"
+  },
+  {
+    "id": 5834,
+    "name": "pegel-abfluss",
+    "webUrl": "https://gitlab.opencode.de/odsh-daten-schemata/staatskanzlei/pegel-abfluss",
+    "description": "No description",
+    "createdAt": "2025-07-22T09:26:16.298Z",
+    "lastActivityAt": "2025-07-22T09:26:16.136Z"
+  },
+  {
+    "id": 5833,
+    "name": "nitratmessdienst_schleswig-holstein",
+    "webUrl": "https://gitlab.opencode.de/odsh-daten-schemata/staatskanzlei/nitratmessdienst_schleswig-holstein",
+    "description": "No description",
+    "createdAt": "2025-07-22T09:24:33.524Z",
+    "lastActivityAt": "2025-07-22T09:24:33.420Z"
+  },
+  {
+    "id": 5825,
+    "name": "EVP-Massnahmen",
+    "webUrl": "https://gitlab.opencode.de/eichbehoerden/evp-massnahmen",
+    "description": "No description",
+    "createdAt": "2025-07-21T11:23:25.810Z",
+    "lastActivityAt": "2025-07-31T11:45:48.161Z"
+  },
+  {
+    "id": 5824,
+    "name": "GSB11 Extension gsb_minimal",
+    "webUrl": "https://gitlab.opencode.de/bmi/government-site-builder-11/extensions/gsb_minimal",
+    "description": "No description",
+    "createdAt": "2025-07-21T09:47:01.335Z",
+    "lastActivityAt": "2025-08-05T05:48:41.049Z"
+  },
+  {
+    "id": 5820,
+    "name": "KERN – Plain-CSS-HTML-Kit",
+    "webUrl": "https://gitlab.opencode.de/OC000088229776/kern-ux-plain",
+    "description": "Implementation des KERN Design-Systems in CSS/HTML.",
+    "createdAt": "2025-07-20T16:49:29.444Z",
+    "lastActivityAt": "2025-07-30T14:52:18.250Z"
+  },
+  {
+    "id": 5817,
+    "name": "alfresco-third-party-license-overrides",
+    "webUrl": "https://gitlab.opencode.de/sh/digitalhub-sh/landesprogramm-offene-innovationen/mach-e-verwaltung/alfresco-third-party-license-overrides",
+    "description": "No description",
+    "createdAt": "2025-07-18T13:46:34.811Z",
+    "lastActivityAt": "2025-07-21T08:42:23.192Z"
+  },
+  {
+    "id": 5816,
+    "name": "plateg-vorlagen",
+    "webUrl": "https://gitlab.opencode.de/bmi/e-gesetzgebung/plateg-vorlagen",
+    "description": "No description",
+    "createdAt": "2025-07-18T13:01:41.950Z",
+    "lastActivityAt": "2025-07-25T16:25:33.129Z"
+  },
+  {
+    "id": 5815,
+    "name": "plateg-print-br",
+    "webUrl": "https://gitlab.opencode.de/bmi/e-gesetzgebung/plateg-print-br",
+    "description": "No description",
+    "createdAt": "2025-07-18T13:01:03.138Z",
+    "lastActivityAt": "2025-07-25T16:24:41.514Z"
+  },
+  {
+    "id": 5814,
+    "name": "plateg-ausschuss-bt",
+    "webUrl": "https://gitlab.opencode.de/bmi/e-gesetzgebung/plateg-ausschuss-bt",
+    "description": "No description",
+    "createdAt": "2025-07-18T13:00:40.401Z",
+    "lastActivityAt": "2025-07-25T16:20:00.335Z"
+  },
+  {
+    "id": 5813,
+    "name": "ggp-cockpit",
+    "webUrl": "https://gitlab.opencode.de/bmi/e-gesetzgebung/ggp-cockpit",
+    "description": "No description",
+    "createdAt": "2025-07-18T12:58:57.816Z",
+    "lastActivityAt": "2025-07-18T12:58:57.720Z"
+  },
+  {
+    "id": 5811,
+    "name": "DevGuard SBOM Archive",
+    "webUrl": "https://gitlab.opencode.de/open-code/badgebackend/devguard-sbom-archive",
+    "description": "No description",
+    "createdAt": "2025-07-18T11:02:54.558Z",
+    "lastActivityAt": "2025-07-25T13:24:52.044Z"
+  },
+  {
+    "id": 5808,
+    "name": "KERN Projektinformationen",
+    "webUrl": "https://gitlab.opencode.de/kern-ux/community/kerninfo",
+    "description": "Inhalte für das openCode Softwareverzeichnis. Beschreibungen, Logos und Screenshots wichtiger Elemente.",
+    "createdAt": "2025-07-18T06:32:01.165Z",
+    "lastActivityAt": "2025-08-01T05:25:31.139Z"
+  },
+  {
+    "id": 5799,
+    "name": "Feedback Server",
+    "webUrl": "https://gitlab.opencode.de/open-code/document-writing-tools/feedback-server",
+    "description": "Synchronisiert Feedback zu Issues in openCode Projekten.",
+    "createdAt": "2025-07-16T14:22:03.541Z",
+    "lastActivityAt": "2025-08-04T12:16:12.857Z"
+  },
+  {
+    "id": 5784,
+    "name": "IUCLID_API_Documentation",
+    "webUrl": "https://gitlab.opencode.de/BfR/iuclid_api_documentation",
+    "description": "No description",
+    "createdAt": "2025-07-15T10:03:58.502Z",
+    "lastActivityAt": "2025-07-15T10:03:57.871Z"
+  },
+  {
+    "id": 5783,
+    "name": "Organisations-IDs",
+    "webUrl": "https://gitlab.opencode.de/OC00008873225/org-ids",
+    "description": "No description",
+    "createdAt": "2025-07-14T22:40:30.030Z",
+    "lastActivityAt": "2025-07-14T22:40:29.921Z"
+  },
+  {
+    "id": 5780,
+    "name": "personal-access-token-self-rotate",
+    "webUrl": "https://gitlab.opencode.de/oss-gerardo-testing/ci-cd-component-testing/personal-access-token-self-rotate",
+    "description": "No description",
+    "createdAt": "2025-07-14T13:43:20.023Z",
+    "lastActivityAt": "2025-07-14T13:43:19.914Z"
+  },
+  {
+    "id": 5778,
+    "name": "Charts-Mirror",
+    "webUrl": "https://gitlab.opencode.de/bmi/opendesk/components/Platform/Charts-Mirror",
+    "description": "Registry mirror",
+    "createdAt": "2025-07-14T13:02:45.154Z",
+    "lastActivityAt": "2025-07-14T13:02:45.919Z"
+  },
+  {
+    "id": 5777,
+    "name": "Charts-Mirror",
+    "webUrl": "https://gitlab.opencode.de/bmi/opendesk/components/Community/Charts-Mirror",
+    "description": "Registry mirror",
+    "createdAt": "2025-07-14T12:45:01.065Z",
+    "lastActivityAt": "2025-07-14T12:45:01.857Z"
+  },
+  {
+    "id": 5776,
+    "name": "Images-Mirror",
+    "webUrl": "https://gitlab.opencode.de/bmi/opendesk/components/Community/Images-Mirror",
+    "description": "Registry mirror",
+    "createdAt": "2025-07-14T12:44:05.442Z",
+    "lastActivityAt": "2025-07-14T12:44:06.163Z"
+  },
+  {
+    "id": 5773,
+    "name": "smartwaste",
+    "webUrl": "https://gitlab.opencode.de/kielregion-gmbh/beteiligung/smartwaste",
+    "description": "No description",
+    "createdAt": "2025-07-14T07:46:47.829Z",
+    "lastActivityAt": "2025-08-05T07:59:09.666Z"
+  },
+  {
+    "id": 5772,
+    "name": "nachnutzung",
+    "webUrl": "https://gitlab.opencode.de/OC000083075077/nachnutzung",
+    "description": "No description",
+    "createdAt": "2025-07-13T13:27:06.345Z",
+    "lastActivityAt": "2025-07-13T13:27:06.246Z"
+  },
+  {
+    "id": 6191,
+    "name": "Schema GeoJSON",
+    "webUrl": "https://gitlab.opencode.de/odsh-daten-schemata/schema-geojson",
+    "description": "No description",
+    "createdAt": "2025-08-05T13:13:11.317Z",
+    "lastActivityAt": "2025-08-05T13:13:11.209Z"
+  },
+  {
+    "id": 6190,
+    "name": "GenericTwinFramework",
+    "webUrl": "https://gitlab.opencode.de/connected-urban-twins/generictwin/generictwinframework",
+    "description": "No description",
+    "createdAt": "2025-08-05T10:09:27.010Z",
+    "lastActivityAt": "2025-08-05T10:09:26.934Z"
+  },
+  {
+    "id": 6185,
+    "name": "Material UI Icons for KERN UX",
+    "webUrl": "https://gitlab.opencode.de/joschka/material-ui-icons-for-kern-ux",
+    "description": "https://gitlab.opencode.de/joschka/material-ui-icons-for-kern-ux/-/raw/main/list.css?ref_type=heads",
+    "createdAt": "2025-08-04T17:10:37.533Z",
+    "lastActivityAt": "2025-08-05T18:04:01.597Z"
+  },
+  {
+    "id": 6180,
+    "name": "FUK-Info-Dashboard",
+    "webUrl": "https://gitlab.opencode.de/OC000079274953/FUK-Info-Dashboard",
+    "description": "Forstliche Umweltkontrolle",
+    "createdAt": "2025-08-04T09:15:54.947Z",
+    "lastActivityAt": "2025-08-04T09:15:53.346Z"
+  },
+  {
+    "id": 6179,
+    "name": "cut-superset-wfs-dialect",
+    "webUrl": "https://gitlab.opencode.de/connected-urban-twins/cut-superset-wfs-dialect",
+    "description": "No description",
+    "createdAt": "2025-08-04T08:50:59.899Z",
+    "lastActivityAt": "2025-08-05T08:06:53.822Z"
+  },
+  {
+    "id": 6175,
+    "name": "open-data",
+    "webUrl": "https://gitlab.opencode.de/energieautarkes-wohnquartier/open-data",
+    "description": "No description",
+    "createdAt": "2025-08-04T07:09:55.592Z",
+    "lastActivityAt": "2025-08-04T07:09:55.501Z"
+  },
+  {
+    "id": 6174,
+    "name": "backend",
+    "webUrl": "https://gitlab.opencode.de/energieautarkes-wohnquartier/backend",
+    "description": "No description",
+    "createdAt": "2025-08-04T07:09:33.651Z",
+    "lastActivityAt": "2025-08-04T07:09:33.568Z"
+  },
+  {
+    "id": 6173,
+    "name": "frontend",
+    "webUrl": "https://gitlab.opencode.de/energieautarkes-wohnquartier/frontend",
+    "description": "No description",
+    "createdAt": "2025-08-04T07:08:42.141Z",
+    "lastActivityAt": "2025-08-04T07:08:42.035Z"
+  },
+  {
+    "id": 6166,
+    "name": "FUK-proxy",
+    "webUrl": "https://gitlab.opencode.de/lfe/fuk/fuk-proxy",
+    "description": "No description",
+    "createdAt": "2025-08-03T09:56:25.723Z",
+    "lastActivityAt": "2025-08-03T12:32:48.931Z"
+  },
+  {
+    "id": 6155,
+    "name": "corporate-design",
+    "webUrl": "https://gitlab.opencode.de/oc000056025066/corporate-design",
+    "description": "No description",
+    "createdAt": "2025-07-31T13:23:47.331Z",
+    "lastActivityAt": "2025-08-05T07:08:35.663Z"
+  },
+  {
+    "id": 6152,
+    "name": "Digitalisierung eines Sekundärwärmenetzes",
+    "webUrl": "https://gitlab.opencode.de/OC000011068002/digitalisierung-eines-sekundaerwaermenetzes",
+    "description": "No description",
+    "createdAt": "2025-07-31T12:22:10.775Z",
+    "lastActivityAt": "2025-07-31T12:22:10.683Z"
+  },
+  {
+    "id": 6149,
+    "name": "DVeC",
+    "webUrl": "https://gitlab.opencode.de/eichbehoerden/dvec",
+    "description": "\"Digitaler Eichschein (DVeC)\" als Pendant zum  \"Digitalen Kalibrierschein (DCC)\" und dem \"Digitalen Konformitätsbewertungszertifikat (DCoC)\". Eine Grundlage für \r\nmaschinenlesbare Zertifikate in der Metrologie.",
+    "createdAt": "2025-07-31T11:15:24.446Z",
+    "lastActivityAt": "2025-08-04T08:41:10.242Z"
+  },
+  {
+    "id": 6142,
+    "name": "KERN – Plain-CSS-HTML-Kit",
+    "webUrl": "https://gitlab.opencode.de/joschka/kern-ux-plain",
+    "description": "Implementation des KERN Design-Systems in CSS/HTML.",
+    "createdAt": "2025-07-30T12:39:31.026Z",
+    "lastActivityAt": "2025-07-30T12:39:30.913Z"
+  },
+  {
+    "id": 6135,
+    "name": "style-dictionary",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/style-dictionary",
+    "description": "Angie Design System's design tokens (npm package) Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/style-dictionary",
+    "createdAt": "2025-07-29T14:04:35.156Z",
+    "lastActivityAt": "2025-07-29T14:04:34.299Z"
+  },
+  {
+    "id": 6134,
+    "name": "a2j-kommunikationsplattform",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/digitale-justiz/a2j-kommunikationsplattform",
+    "description": "Erprobung einer Kommunikationsplattform im zivilgerichtlichen Online-Verfahren - Testing a communication platform in online civil court proceedings Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/a2j-kommunikationsplattform",
+    "createdAt": "2025-07-29T14:04:31.702Z",
+    "lastActivityAt": "2025-08-05T04:04:12.528Z"
+  },
+  {
+    "id": 6133,
+    "name": "digitalcheck-dito",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/digitalcheck/digitalcheck-dito",
+    "description": "Digitalcheck Digital Touchpoint Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/digitalcheck-dito",
+    "createdAt": "2025-07-29T14:04:31.741Z",
+    "lastActivityAt": "2025-08-04T04:04:32.116Z"
+  },
+  {
+    "id": 6132,
+    "name": "ris-search",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/digitalisierung-des-rechts/ris-search",
+    "description": "RIS service to search norms and case law data Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/ris-search",
+    "createdAt": "2025-07-29T14:04:31.606Z",
+    "lastActivityAt": "2025-07-29T14:04:30.924Z"
+  },
+  {
+    "id": 6131,
+    "name": "ris-norms-migration-import",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/digitalisierung-des-rechts/ris-norms-migration-import",
+    "description": "Job for importing the migrated norms from the migration tables into the norms tables Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/ris-norms-migration-import",
+    "createdAt": "2025-07-29T14:04:30.724Z",
+    "lastActivityAt": "2025-07-30T04:04:06.725Z"
+  },
+  {
+    "id": 6130,
+    "name": "useid-app-android",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/digitale-identit-ten/useid-app-android",
+    "description": "Android client for the UseID project Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/useid-app-android",
+    "createdAt": "2025-07-29T14:04:30.151Z",
+    "lastActivityAt": "2025-08-01T04:04:25.759Z"
+  },
+  {
+    "id": 6129,
+    "name": "hack-jira-cfd",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/hack-jira-cfd",
+    "description": "Get more info on how work flows through a Jira board Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/hack-jira-cfd",
+    "createdAt": "2025-07-29T14:04:28.252Z",
+    "lastActivityAt": "2025-07-30T04:04:10.604Z"
+  },
+  {
+    "id": 6128,
+    "name": "ris-norms",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/digitalisierung-des-rechts/ris-norms",
+    "description": "RIS-Norms mono repository Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/ris-norms",
+    "createdAt": "2025-07-29T14:04:26.809Z",
+    "lastActivityAt": "2025-08-02T04:04:37.996Z"
+  },
+  {
+    "id": 6127,
+    "name": "steuerlotse",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/steuern/steuerlotse",
+    "description": "This is the code repository of the Steuerlotse by DigitalService. Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/steuerlotse",
+    "createdAt": "2025-07-29T14:04:26.217Z",
+    "lastActivityAt": "2025-07-29T14:04:26.056Z"
+  },
+  {
+    "id": 6126,
+    "name": "grundsteuer",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/steuern/grundsteuer",
+    "description": "Grundsteuererklärung für Privateigentum Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/grundsteuer",
+    "createdAt": "2025-07-29T14:04:26.146Z",
+    "lastActivityAt": "2025-07-29T14:04:25.994Z"
+  },
+  {
+    "id": 6125,
+    "name": "digitalcheck-content",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/digitalcheck/digitalcheck-content",
+    "description": "Content of the Digitalcheck documents Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/digitalcheck-content",
+    "createdAt": "2025-07-29T14:04:26.146Z",
+    "lastActivityAt": "2025-07-29T14:04:26.062Z"
+  },
+  {
+    "id": 6124,
+    "name": "erica",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/steuern/erica",
+    "description": "Erica service for communicating with ELSTER via ERiC Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/erica",
+    "createdAt": "2025-07-29T14:04:25.989Z",
+    "lastActivityAt": "2025-07-29T14:04:25.918Z"
+  },
+  {
+    "id": 6123,
+    "name": "terraform-modules",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/terraform-modules",
+    "description": "Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/terraform-modules",
+    "createdAt": "2025-07-29T14:04:25.227Z",
+    "lastActivityAt": "2025-07-30T04:04:10.626Z"
+  },
+  {
+    "id": 6122,
+    "name": "a2j-erv-wrapper",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/digitale-justiz/a2j-erv-wrapper",
+    "description": "Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/a2j-erv-wrapper",
+    "createdAt": "2025-07-29T14:04:24.468Z",
+    "lastActivityAt": "2025-07-29T14:04:23.541Z"
+  },
+  {
+    "id": 6121,
+    "name": "webapp-endpoint-scan",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/webapp-endpoint-scan",
+    "description": "TLS and HTTP secure headers scans for webapps. Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/webapp-endpoint-scan",
+    "createdAt": "2025-07-29T14:04:24.483Z",
+    "lastActivityAt": "2025-07-31T04:03:58.103Z"
+  },
+  {
+    "id": 6120,
+    "name": "ris-norms-ldml-schema-extensions",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/digitalisierung-des-rechts/ris-norms-ldml-schema-extensions",
+    "description": "Shared schema files for extending the LDML standard    Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/ris-norms-ldml-schema-extensions",
+    "createdAt": "2025-07-29T14:04:23.807Z",
+    "lastActivityAt": "2025-07-29T14:04:23.566Z"
+  },
+  {
+    "id": 6119,
+    "name": "angie",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/angie",
+    "description": "Angie Design System (Storybook docs + Tailwind plugin npm package) Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/angie",
+    "createdAt": "2025-07-29T14:04:23.727Z",
+    "lastActivityAt": "2025-07-29T14:04:23.663Z"
+  },
+  {
+    "id": 6118,
+    "name": "wie-viele-menschen",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/accessibility/wie-viele-menschen",
+    "description": "A small website that displays how many of your users in Germany statistically have some type of disability. Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/wie-viele-menschen",
+    "createdAt": "2025-07-29T14:04:23.072Z",
+    "lastActivityAt": "2025-07-29T14:04:22.884Z"
+  },
+  {
+    "id": 6117,
+    "name": "useid-eservice-example",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/digitale-identit-ten/useid-eservice-example",
+    "description": "An example application for an eService integrating with the UseID identity solution Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/useid-eservice-example",
+    "createdAt": "2025-07-29T14:04:22.199Z",
+    "lastActivityAt": "2025-07-29T14:04:22.137Z"
+  },
+  {
+    "id": 6116,
+    "name": "digitalcheck-data",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/digitalcheck/digitalcheck-data",
+    "description": "This repository contains scripts to automatically extract data from Digitalcheck documents (PDF) to be used for evaluation and analysis. Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/digitalcheck-data",
+    "createdAt": "2025-07-29T14:04:20.193Z",
+    "lastActivityAt": "2025-08-03T04:04:14.177Z"
+  },
+  {
+    "id": 6115,
+    "name": "useid-app-ios",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/digitale-identit-ten/useid-app-ios",
+    "description": "iOS client for BundesIdent Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/useid-app-ios",
+    "createdAt": "2025-07-29T14:04:19.999Z",
+    "lastActivityAt": "2025-07-29T14:04:19.900Z"
+  },
+  {
+    "id": 6114,
+    "name": "useid-eservice-sdk",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/digitale-identit-ten/useid-eservice-sdk",
+    "description": "SDK for eService Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/useid-eservice-sdk",
+    "createdAt": "2025-07-29T14:04:19.918Z",
+    "lastActivityAt": "2025-07-29T14:04:19.695Z"
+  },
+  {
+    "id": 6113,
+    "name": "kern-ux-tailwind-theme",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/kern-ux-tailwind-theme",
+    "description": "Tailwind theme with KERN-UX design tokens Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/kern-ux-tailwind-theme",
+    "createdAt": "2025-07-29T14:04:19.825Z",
+    "lastActivityAt": "2025-07-29T14:04:19.749Z"
+  },
+  {
+    "id": 6112,
+    "name": "useid-backend-service",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/digitale-identit-ten/useid-backend-service",
+    "description": "Backend and Widget Service for UseID Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/useid-backend-service",
+    "createdAt": "2025-07-29T14:04:19.592Z",
+    "lastActivityAt": "2025-07-29T14:04:19.438Z"
+  },
+  {
+    "id": 6111,
+    "name": "useid-architecture",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/digitale-identit-ten/useid-architecture",
+    "description": "Architecture of the UseID project Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/useid-architecture",
+    "createdAt": "2025-07-29T14:04:17.989Z",
+    "lastActivityAt": "2025-07-29T14:04:17.192Z"
+  },
+  {
+    "id": 6110,
+    "name": "a2j-rechtsantragstelle-strapi",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/digitale-justiz/a2j-rechtsantragstelle-strapi",
+    "description": "Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/a2j-rechtsantragstelle-strapi",
+    "createdAt": "2025-07-29T14:04:17.902Z",
+    "lastActivityAt": "2025-07-30T04:04:09.125Z"
+  },
+  {
+    "id": 6109,
+    "name": "public_documents",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/public_documents",
+    "description": "Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/public_documents",
+    "createdAt": "2025-07-29T14:04:17.962Z",
+    "lastActivityAt": "2025-07-29T14:04:17.350Z"
+  },
+  {
+    "id": 6108,
+    "name": "useid-documentation",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/digitale-identit-ten/useid-documentation",
+    "description": "Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/useid-documentation",
+    "createdAt": "2025-07-29T14:04:17.834Z",
+    "lastActivityAt": "2025-07-29T14:04:17.246Z"
+  },
+  {
+    "id": 6107,
+    "name": "icons",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/icons",
+    "description": "Material UI icons as React components (npm package) Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/icons",
+    "createdAt": "2025-07-29T14:04:17.781Z",
+    "lastActivityAt": "2025-08-03T04:04:16.453Z"
+  },
+  {
+    "id": 6106,
+    "name": "ris-adm-vwv",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/digitalisierung-des-rechts/ris-adm-vwv",
+    "description": "RIS ADM / VwV mono repo Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/ris-adm-vwv",
+    "createdAt": "2025-07-29T14:04:17.279Z",
+    "lastActivityAt": "2025-07-29T14:04:17.004Z"
+  },
+  {
+    "id": 6105,
+    "name": "a2j-rechtsantragstelle",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/digitale-justiz/a2j-rechtsantragstelle",
+    "description": "⚖️ Zugang zu Recht - Access to Justice - A2J ⚖️ Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/a2j-rechtsantragstelle",
+    "createdAt": "2025-07-29T14:04:17.223Z",
+    "lastActivityAt": "2025-08-03T04:04:54.363Z"
+  },
+  {
+    "id": 6104,
+    "name": "ris-backend-service",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/digitalisierung-des-rechts/ris-backend-service",
+    "description": "RIS Caselaw Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/ris-backend-service",
+    "createdAt": "2025-07-29T14:04:17.240Z",
+    "lastActivityAt": "2025-07-29T14:04:17.027Z"
+  },
+  {
+    "id": 6103,
+    "name": "ris-ui",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/digitalisierung-des-rechts/ris-ui",
+    "description": "Component library for NeuRIS Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/ris-ui",
+    "createdAt": "2025-07-29T14:04:17.076Z",
+    "lastActivityAt": "2025-08-05T04:04:10.505Z"
+  },
+  {
+    "id": 6102,
+    "name": "digitalcheck-beispiele",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/digitalcheck/digitalcheck-beispiele",
+    "description": "Für Contributions über Issues / Pull Request: https://github.com/digitalservicebund/digitalcheck-beispiele",
+    "createdAt": "2025-07-29T14:04:16.914Z",
+    "lastActivityAt": "2025-07-29T14:04:16.792Z"
+  },
+  {
+    "id": 5997,
+    "name": "DUFLOR",
+    "webUrl": "https://gitlab.opencode.de/OC000034877598/duflor",
+    "description": "No description",
+    "createdAt": "2025-07-29T12:16:43.598Z",
+    "lastActivityAt": "2025-07-29T13:17:02.073Z"
+  },
+  {
+    "id": 5995,
+    "name": "KollOM-Fit Report",
+    "webUrl": "https://gitlab.opencode.de/opendva/kollomfit-report",
+    "description": "No description",
+    "createdAt": "2025-07-29T10:07:05.214Z",
+    "lastActivityAt": "2025-07-29T10:07:04.626Z"
+  },
+  {
+    "id": 5991,
+    "name": "BSRAP - Knowledge Graph Visualization",
+    "webUrl": "https://gitlab.opencode.de/opendva/bsrap-knowledge-graph-visualization",
+    "description": "No description",
+    "createdAt": "2025-07-29T07:44:17.616Z",
+    "lastActivityAt": "2025-07-29T09:48:50.845Z"
+  },
+  {
+    "id": 5987,
+    "name": "gitlab-profile",
+    "webUrl": "https://gitlab.opencode.de/digitalservicebund/servicestandard/gitlab-profile",
+    "description": "No description",
+    "createdAt": "2025-07-28T12:39:53.013Z",
+    "lastActivityAt": "2025-07-28T12:39:52.909Z"
+  },
+  {
+    "id": 5986,
+    "name": "bfj-welcome",
+    "webUrl": "https://gitlab.opencode.de/bfj/gitlab-profile",
+    "description": "Unser \"Welcome Repository\" enthält keinen konkreten Code, sondern dient zur Orientierung, Information und Strukturierung. Es bietet einen Einstiegspunkt und erklärt unseren Hintergrund. Bitte beachten Sie ggfs. vorgeschlagene generelle Konventionen vom BfJ.",
+    "createdAt": "2025-07-28T11:40:58.813Z",
+    "lastActivityAt": "2025-07-28T12:07:04.146Z"
+  },
+  {
+    "id": 5889,
+    "name": "mach-everwaltung-oce",
+    "webUrl": "https://gitlab.opencode.de/sh/digitalhub-sh/landesprogramm-offene-innovationen/mach-e-verwaltung/mach-everwaltung-oce",
+    "description": "No description",
+    "createdAt": "2025-07-25T15:33:09.737Z",
+    "lastActivityAt": "2025-07-25T15:33:09.658Z"
+  },
+  {
+    "id": 5888,
+    "name": "alfresco-community-share",
+    "webUrl": "https://gitlab.opencode.de/sh/digitalhub-sh/landesprogramm-offene-innovationen/mach-e-verwaltung/alfresco-community-share",
+    "description": "No description",
+    "createdAt": "2025-07-25T14:21:26.918Z",
+    "lastActivityAt": "2025-07-25T15:26:26.930Z"
+  },
+  {
+    "id": 5887,
+    "name": "alfresco-community-repo",
+    "webUrl": "https://gitlab.opencode.de/sh/digitalhub-sh/landesprogramm-offene-innovationen/mach-e-verwaltung/alfresco-community-repo",
+    "description": "No description",
+    "createdAt": "2025-07-25T14:02:38.255Z",
+    "lastActivityAt": "2025-07-25T14:02:38.180Z"
+  },
+  {
+    "id": 5885,
+    "name": "pbd-toolkit",
+    "webUrl": "https://gitlab.opencode.de/hbdi/pbd-toolkit",
+    "description": "Bei dem pbD-Toolkit handelt es sich um ein Tool, das der Hessische Beauftragte für Datenschutz und Informationsfreiheit (HBDI) programmiert hat, um große Datenmenge zu durchsuchen. Das Tool soll dabei Hinweise dafür suchen, ob in diesen Datenmengen personenbezogene Daten enthalten sein könnten. Ein Beispiel für große Datenmengen, die der HBDI damit durchsucht, sind Daten-Leaks, die etwa im sogenannten Darknet veröffentlicht werden.",
+    "createdAt": "2025-07-25T11:18:52.801Z",
+    "lastActivityAt": "2025-07-29T12:02:12.413Z"
+  },
+  {
+    "id": 5884,
+    "name": "DevGuard SBOM Frontend",
+    "webUrl": "https://gitlab.opencode.de/open-code/badgebackend/devguard-sbom-frontend",
+    "description": "No description",
+    "createdAt": "2025-07-25T10:54:35.575Z",
+    "lastActivityAt": "2025-07-25T13:25:32.159Z"
+  },
+  {
+    "id": 5883,
+    "name": "osiv2-postfach",
+    "webUrl": "https://gitlab.opencode.de/sh/zit/ozg-cloud/app/osiv2-postfach",
+    "description": "No description",
+    "createdAt": "2025-07-25T07:36:28.145Z",
+    "lastActivityAt": "2025-08-01T10:50:33.461Z"
+  },
+  {
+    "id": 5881,
+    "name": "Frontend",
+    "webUrl": "https://gitlab.opencode.de/dmoch/frontend",
+    "description": "User-Interface in Svelte",
+    "createdAt": "2025-07-24T14:00:33.728Z",
+    "lastActivityAt": "2025-07-24T14:00:32.877Z"
+  },
+  {
+    "id": 5868,
+    "name": "Dokumentation",
+    "webUrl": "https://gitlab.opencode.de/f13-zimmern/dokumentation",
+    "description": "No description",
+    "createdAt": "2025-07-23T14:36:22.191Z",
+    "lastActivityAt": "2025-07-23T14:36:22.087Z"
+  },
+  {
+    "id": 5867,
+    "name": "Community",
+    "webUrl": "https://gitlab.opencode.de/f13-zimmern/community",
+    "description": "No description",
+    "createdAt": "2025-07-23T14:35:13.087Z",
+    "lastActivityAt": "2025-07-23T14:35:12.853Z"
+  },
+  {
+    "id": 5866,
+    "name": "Community",
+    "webUrl": "https://gitlab.opencode.de/hightower/community",
+    "description": "No description",
+    "createdAt": "2025-07-23T14:32:54.252Z",
+    "lastActivityAt": "2025-07-23T14:32:54.098Z"
+  },
+  {
+    "id": 5864,
+    "name": "openDesk",
+    "webUrl": "https://gitlab.opencode.de/itzbundfabianhardt/opendesk",
+    "description": "Helmfile / Helm chart-based deployment automation for openDesk Community and Enterprise Edition.",
+    "createdAt": "2025-07-23T14:08:17.251Z",
+    "lastActivityAt": "2025-07-23T14:08:17.151Z"
+  },
+  {
+    "id": 5862,
+    "name": "iamock",
+    "webUrl": "https://gitlab.opencode.de/bmi/e-gesetzgebung/iamock",
+    "description": "No description",
+    "createdAt": "2025-07-23T12:37:43.420Z",
+    "lastActivityAt": "2025-07-25T16:19:36.248Z"
+  },
+  {
+    "id": 5858,
+    "name": "KERN – Angular-Kit ",
+    "webUrl": "https://gitlab.opencode.de/OC000088229776/angular-kit",
+    "description": "Community Projekt: Implementation des KERN Design-Systems für Angular.",
+    "createdAt": "2025-07-23T09:09:20.002Z",
+    "lastActivityAt": "2025-07-30T17:39:22.796Z"
+  },
+  {
+    "id": 5854,
+    "name": "KERN – React-Kit",
+    "webUrl": "https://gitlab.opencode.de/joschka/kern-react-kit",
+    "description": "Community Projekt: Implementation des KERN Design-Systems für React.",
+    "createdAt": "2025-07-22T14:46:15.885Z",
+    "lastActivityAt": "2025-07-24T15:15:29.518Z"
+  },
+  {
+    "id": 5849,
+    "name": "Matrix G2C-Pilot Project Template",
+    "webUrl": "https://gitlab.opencode.de/fitko/matrix-g2x/matrix-g2c-pilot-project-template",
+    "description": "Repository template for starting new software projects.",
+    "createdAt": "2025-07-22T10:54:01.284Z",
+    "lastActivityAt": "2025-07-24T16:58:35.068Z"
+  },
+  {
+    "id": 5847,
+    "name": "zufish-organisationen",
+    "webUrl": "https://gitlab.opencode.de/odsh-daten-schemata/staatskanzlei/zufish-organisationen",
+    "description": "No description",
+    "createdAt": "2025-07-22T09:59:13.042Z",
+    "lastActivityAt": "2025-07-22T09:59:12.914Z"
+  },
+  {
+    "id": 5846,
+    "name": "zufish-gebiete",
+    "webUrl": "https://gitlab.opencode.de/odsh-daten-schemata/staatskanzlei/zufish-gebiete",
+    "description": "No description",
+    "createdAt": "2025-07-22T09:58:33.751Z",
+    "lastActivityAt": "2025-07-22T09:58:33.601Z"
+  },
+  {
+    "id": 5845,
+    "name": "wirtschaftsduenger",
+    "webUrl": "https://gitlab.opencode.de/odsh-daten-schemata/staatskanzlei/wirtschaftsduenger",
+    "description": "No description",
+    "createdAt": "2025-07-22T09:57:10.090Z",
+    "lastActivityAt": "2025-07-22T09:57:09.987Z"
+  },
+  {
+    "id": 5844,
+    "name": "verkehrsunfaelle",
+    "webUrl": "https://gitlab.opencode.de/odsh-daten-schemata/staatskanzlei/verkehrsunfaelle",
+    "description": "No description",
+    "createdAt": "2025-07-22T09:54:37.095Z",
+    "lastActivityAt": "2025-07-22T09:54:36.999Z"
+  },
+  {
+    "id": 5843,
+    "name": "timestamp-area-sensor-value",
+    "webUrl": "https://gitlab.opencode.de/odsh-daten-schemata/staatskanzlei/timestamp-area-sensor-value",
+    "description": "No description",
+    "createdAt": "2025-07-22T09:53:23.564Z",
+    "lastActivityAt": "2025-07-22T09:53:23.326Z"
+  },
+  {
+    "id": 5842,
+    "name": "timestamp-area-sensor-in-out",
+    "webUrl": "https://gitlab.opencode.de/odsh-daten-schemata/staatskanzlei/timestamp-area-sensor-in-out",
+    "description": "No description",
+    "createdAt": "2025-07-22T09:46:20.689Z",
+    "lastActivityAt": "2025-07-22T09:46:20.383Z"
+  },
+  {
+    "id": 5840,
+    "name": "2016_sozialplanung_indikatoren_werte_gesamt",
+    "webUrl": "https://gitlab.opencode.de/odsh-daten-schemata/staatskanzlei/2016_sozialplanung_indikatoren_werte_gesamt",
+    "description": "No description",
+    "createdAt": "2025-07-22T09:39:25.686Z",
+    "lastActivityAt": "2025-07-22T09:39:25.603Z"
+  },
+  {
+    "id": 5839,
+    "name": "siedlungsabfallaufkommen-nach-bilanznummer-und-entsorgungsweg",
+    "webUrl": "https://gitlab.opencode.de/odsh-daten-schemata/staatskanzlei/siedlungsabfallaufkommen-nach-bilanznummer-und-entsorgungsweg",
+    "description": "No description",
+    "createdAt": "2025-07-22T09:32:08.143Z",
+    "lastActivityAt": "2025-07-22T09:32:07.998Z"
+  },
+  {
+    "id": 5838,
+    "name": "siedlungsabfallaufkommen-nach-avv-schluesseln",
+    "webUrl": "https://gitlab.opencode.de/odsh-daten-schemata/staatskanzlei/siedlungsabfallaufkommen-nach-avv-schluesseln",
+    "description": "No description",
+    "createdAt": "2025-07-22T09:31:07.724Z",
+    "lastActivityAt": "2025-07-22T09:31:07.584Z"
+  },
+  {
+    "id": 5837,
+    "name": "mitfahrbank",
+    "webUrl": "https://gitlab.opencode.de/odsh-daten-schemata/staatskanzlei/mitfahrbank",
+    "description": "No description",
+    "createdAt": "2025-07-22T09:29:46.123Z",
+    "lastActivityAt": "2025-07-22T09:29:46.030Z"
+  },
+  {
+    "id": 5836,
+    "name": "pegel-wasserstand",
+    "webUrl": "https://gitlab.opencode.de/odsh-daten-schemata/staatskanzlei/pegel-wasserstand",
+    "description": "No description",
+    "createdAt": "2025-07-22T09:28:32.350Z",
+    "lastActivityAt": "2025-07-22T09:28:32.250Z"
+  },
+  {
+    "id": 5835,
+    "name": "pegel-messungen",
+    "webUrl": "https://gitlab.opencode.de/odsh-daten-schemata/staatskanzlei/pegel-messungen",
+    "description": "No description",
+    "createdAt": "2025-07-22T09:27:36.660Z",
+    "lastActivityAt": "2025-07-22T09:27:36.542Z"
+  },
+  {
+    "id": 5834,
+    "name": "pegel-abfluss",
+    "webUrl": "https://gitlab.opencode.de/odsh-daten-schemata/staatskanzlei/pegel-abfluss",
+    "description": "No description",
+    "createdAt": "2025-07-22T09:26:16.298Z",
+    "lastActivityAt": "2025-07-22T09:26:16.136Z"
+  },
+  {
+    "id": 5833,
+    "name": "nitratmessdienst_schleswig-holstein",
+    "webUrl": "https://gitlab.opencode.de/odsh-daten-schemata/staatskanzlei/nitratmessdienst_schleswig-holstein",
+    "description": "No description",
+    "createdAt": "2025-07-22T09:24:33.524Z",
+    "lastActivityAt": "2025-07-22T09:24:33.420Z"
+  },
+  {
+    "id": 5825,
+    "name": "EVP-Massnahmen",
+    "webUrl": "https://gitlab.opencode.de/eichbehoerden/evp-massnahmen",
+    "description": "No description",
+    "createdAt": "2025-07-21T11:23:25.810Z",
+    "lastActivityAt": "2025-07-31T11:45:48.161Z"
+  },
+  {
+    "id": 5824,
+    "name": "GSB11 Extension gsb_minimal",
+    "webUrl": "https://gitlab.opencode.de/bmi/government-site-builder-11/extensions/gsb_minimal",
+    "description": "No description",
+    "createdAt": "2025-07-21T09:47:01.335Z",
+    "lastActivityAt": "2025-08-05T05:48:41.049Z"
+  },
+  {
+    "id": 5820,
+    "name": "KERN – Plain-CSS-HTML-Kit",
+    "webUrl": "https://gitlab.opencode.de/OC000088229776/kern-ux-plain",
+    "description": "Implementation des KERN Design-Systems in CSS/HTML.",
+    "createdAt": "2025-07-20T16:49:29.444Z",
+    "lastActivityAt": "2025-07-30T14:52:18.250Z"
+  },
+  {
+    "id": 5817,
+    "name": "alfresco-third-party-license-overrides",
+    "webUrl": "https://gitlab.opencode.de/sh/digitalhub-sh/landesprogramm-offene-innovationen/mach-e-verwaltung/alfresco-third-party-license-overrides",
+    "description": "No description",
+    "createdAt": "2025-07-18T13:46:34.811Z",
+    "lastActivityAt": "2025-07-21T08:42:23.192Z"
+  },
+  {
+    "id": 5816,
+    "name": "plateg-vorlagen",
+    "webUrl": "https://gitlab.opencode.de/bmi/e-gesetzgebung/plateg-vorlagen",
+    "description": "No description",
+    "createdAt": "2025-07-18T13:01:41.950Z",
+    "lastActivityAt": "2025-07-25T16:25:33.129Z"
+  },
+  {
+    "id": 5815,
+    "name": "plateg-print-br",
+    "webUrl": "https://gitlab.opencode.de/bmi/e-gesetzgebung/plateg-print-br",
+    "description": "No description",
+    "createdAt": "2025-07-18T13:01:03.138Z",
+    "lastActivityAt": "2025-07-25T16:24:41.514Z"
+  },
+  {
+    "id": 5814,
+    "name": "plateg-ausschuss-bt",
+    "webUrl": "https://gitlab.opencode.de/bmi/e-gesetzgebung/plateg-ausschuss-bt",
+    "description": "No description",
+    "createdAt": "2025-07-18T13:00:40.401Z",
+    "lastActivityAt": "2025-07-25T16:20:00.335Z"
+  },
+  {
+    "id": 5813,
+    "name": "ggp-cockpit",
+    "webUrl": "https://gitlab.opencode.de/bmi/e-gesetzgebung/ggp-cockpit",
+    "description": "No description",
+    "createdAt": "2025-07-18T12:58:57.816Z",
+    "lastActivityAt": "2025-07-18T12:58:57.720Z"
+  },
+  {
+    "id": 5811,
+    "name": "DevGuard SBOM Archive",
+    "webUrl": "https://gitlab.opencode.de/open-code/badgebackend/devguard-sbom-archive",
+    "description": "No description",
+    "createdAt": "2025-07-18T11:02:54.558Z",
+    "lastActivityAt": "2025-07-25T13:24:52.044Z"
+  },
+  {
+    "id": 5808,
+    "name": "KERN Projektinformationen",
+    "webUrl": "https://gitlab.opencode.de/kern-ux/community/kerninfo",
+    "description": "Inhalte für das openCode Softwareverzeichnis. Beschreibungen, Logos und Screenshots wichtiger Elemente.",
+    "createdAt": "2025-07-18T06:32:01.165Z",
+    "lastActivityAt": "2025-08-01T05:25:31.139Z"
+  },
+  {
+    "id": 5799,
+    "name": "Feedback Server",
+    "webUrl": "https://gitlab.opencode.de/open-code/document-writing-tools/feedback-server",
+    "description": "Synchronisiert Feedback zu Issues in openCode Projekten.",
+    "createdAt": "2025-07-16T14:22:03.541Z",
+    "lastActivityAt": "2025-08-04T12:16:12.857Z"
+  },
+  {
+    "id": 5784,
+    "name": "IUCLID_API_Documentation",
+    "webUrl": "https://gitlab.opencode.de/BfR/iuclid_api_documentation",
+    "description": "No description",
+    "createdAt": "2025-07-15T10:03:58.502Z",
+    "lastActivityAt": "2025-07-15T10:03:57.871Z"
+  },
+  {
+    "id": 5783,
+    "name": "Organisations-IDs",
+    "webUrl": "https://gitlab.opencode.de/OC00008873225/org-ids",
+    "description": "No description",
+    "createdAt": "2025-07-14T22:40:30.030Z",
+    "lastActivityAt": "2025-07-14T22:40:29.921Z"
+  },
+  {
+    "id": 5780,
+    "name": "personal-access-token-self-rotate",
+    "webUrl": "https://gitlab.opencode.de/oss-gerardo-testing/ci-cd-component-testing/personal-access-token-self-rotate",
+    "description": "No description",
+    "createdAt": "2025-07-14T13:43:20.023Z",
+    "lastActivityAt": "2025-07-14T13:43:19.914Z"
+  },
+  {
+    "id": 5778,
+    "name": "Charts-Mirror",
+    "webUrl": "https://gitlab.opencode.de/bmi/opendesk/components/Platform/Charts-Mirror",
+    "description": "Registry mirror",
+    "createdAt": "2025-07-14T13:02:45.154Z",
+    "lastActivityAt": "2025-07-14T13:02:45.919Z"
+  },
+  {
+    "id": 5777,
+    "name": "Charts-Mirror",
+    "webUrl": "https://gitlab.opencode.de/bmi/opendesk/components/Community/Charts-Mirror",
+    "description": "Registry mirror",
+    "createdAt": "2025-07-14T12:45:01.065Z",
+    "lastActivityAt": "2025-07-14T12:45:01.857Z"
+  },
+  {
+    "id": 5776,
+    "name": "Images-Mirror",
+    "webUrl": "https://gitlab.opencode.de/bmi/opendesk/components/Community/Images-Mirror",
+    "description": "Registry mirror",
+    "createdAt": "2025-07-14T12:44:05.442Z",
+    "lastActivityAt": "2025-07-14T12:44:06.163Z"
+  },
+  {
+    "id": 5773,
+    "name": "smartwaste",
+    "webUrl": "https://gitlab.opencode.de/kielregion-gmbh/beteiligung/smartwaste",
+    "description": "No description",
+    "createdAt": "2025-07-14T07:46:47.829Z",
+    "lastActivityAt": "2025-08-05T07:59:09.666Z"
+  },
+  {
+    "id": 5772,
+    "name": "nachnutzung",
+    "webUrl": "https://gitlab.opencode.de/OC000083075077/nachnutzung",
+    "description": "No description",
+    "createdAt": "2025-07-13T13:27:06.345Z",
+    "lastActivityAt": "2025-07-13T13:27:06.246Z"
+  }
+]

@@ -1,0 +1,42 @@
+
+@import './components/_fonts.css';
+@import './components/_variables.css';
+@import './../../components/molecules/search/search.molecule.css';
+@import './../../components/atoms/button/button.atom.css';
+@import './components/_levels.css';
+
+.hidden {
+    display: none;
+}
+
+
+body{
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    margin: 0;
+    background-color: var(--bg-color-primary)
+}
+/* .skill-value{
+    background-color: lightblue;
+}
+.skill-searh{
+    background-color: yellow;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

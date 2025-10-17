@@ -1,0 +1,11 @@
+<ul class="list-group" role="list" data-component="list.atom">
+    {% for item in params.items %}
+        <li class="list-group-item list-group-item-{{ params.type }}" role="listitem">
+            {% if params.show_icon == true %}
+                {{ component('css-icon', { name: params.type}) }}
+            {% endif %}
+            {{ params.prefix }}
+            <strong>{{item}}</strong>
+        </li>
+    {% endfor %}
+</ul>

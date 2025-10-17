@@ -1,0 +1,61 @@
+{#
+    component: Details Molecule
+    description: Collapsible details section with a button to show/hide the details.
+    params:
+        - items: array of objects with 'records' (array) and 'type' (string) and 'message' (string)
+        - id: string, the id for the collapse element
+        - show: boolean, whether the details are shown by default
+        - title: string, the title of the details section
+        - no_items_message: string, message to display when there are no items
+        - translations: object, translations for different types
+        - type_content: string, type of the badge (e.g., 'error')
+    optional params:
+        - type_button: string, type of the button (e.g., 'link', 'button', 'cta')
+        - button_class_modifier: string, additional classes for the button
+#}
+
+{% set items = params.items %}
+{% set translations = params.translations %}
+{% set id = params.id | safeParam('detailsCollapse') %}
+{% set show = "show" | safeParamIf(params.show == true) %}
+
+<section data-component="molecule" class="details-molecule">
+    {% if params.type_button %}
+    {{
+        component('badge', {
+            type_content: params.type_content | translate(translations),
+            type_button: params.type_button,
+            text: params.title,
+            counter: items | len('records'),
+            collapseID: id,
+            collapseShow: true,
+            class_modifier: params.button_class_modifier
+        })
+    }}
+    {% endif %}
+
+    <div class="collapse {{show}}" id="{{id}}">
+        <div class="card card-body">
+            {% if items and items | length > 0 %}
+                <div class="mt-3">
+                    {# <h3>{{ params.title }}</h3> #}
+                    {% for item in items %}
+                        {{
+                            component("list", {
+                                items: item.records,
+                                show_icon: params.show_list_icon,
+                                type: item.type | translate(translations),
+                                prefix: item.message
+                            })
+                        }}
+                        {% if loop.index > 1 %}
+                            <hr >
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            {% else %}
+                <p>{{params.no_items_message}}</p>
+            {% endif %}
+        </div>
+    </div>
+</section>

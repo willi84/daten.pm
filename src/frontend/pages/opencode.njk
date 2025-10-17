@@ -1,0 +1,88 @@
+---
+layout: base.template.njk
+title: Welcome to opencode
+navigation: true
+footer: true
+---
+ {%- from "./../templates/_setup/macros/component.macro.njk" import component -%}
+
+ {% set hideProperties = ['private', 'full_name']%}
+ {% set repos = opencode %}
+
+
+ <head>
+ <!-- // ... -->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@kern-ux/native/dist/kern.min.css" />
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@kern-ux/native/dist/fonts/fira-sans.css" />
+ <!-- // ... -->
+</head>
+
+ <div data-search="repos">
+    {% set count = repos.properties.id.count%}
+    {% for property, item in repos.properties %}
+        {% set isHiddenKey = hideProperties | contains(property) %}
+{# <button type="button" class="kern-btn kern-btn--primary">
+<span class="kern-label">Primary Button</span>
+</button> #}
+
+            <button type="button" class="btxxn btn-prixxmary btn-xs kern-btn kern-btn--primary" data-active="{{ not isHiddenKey }}"  data-filter-type="property" data-filter-value="{{ property }}">
+     {# <span class="badge bg-secondary">{{item.count}}</span> #}
+     {{property}}
+     {# <span class="kern-label">{{property}}</span> #}
+     {# <span class="badge bg-secondary">{{item.count}}</span> #}
+   </button>
+    {% endfor %}
+    <div class="kern-form-input">
+{# <label class="kern-label" for="text">Familienname</label> #}
+{# <input class="kern-form-input__input" id="text" name="text" type="text"> #}
+<input type="text" class="kern-form-input__input form-conXtrol mb-3" placeholder="Search {{count}} repositories..." aria-label="Search repositories..." />
+<div id="emailHelp" class="form-text search__result">
+    <span class="search__default">&nbsp;</span>
+    <span class="search__no-result hidden">Der Begriff <span class="search__value"></span> wurde nicht gefunden.</span>
+    <span class="search__has-result hidden">Es wurden <span class="search__num-results"></span> Ergebnisse gefunden.</span>
+</div>
+</div>
+    <table class="tabxxle kern-table kern-table--striped">
+        {% for key, repo in repos.data %}
+        {% set index = loop.index%}
+            <tr class="kern-table__row" data-repo="{{ key }}" data-active="true" data-searchable="{{repo | allValues }}">
+                {% set isHiddenProperty = hideProperties | contains('index') %}
+                {# <td class="kern-table
+                {# index #}
+                <td class="kern-table__cell"  data-property="index" data-hidden="{{isHiddenProperty}}">
+                    {# <a href="/opencode/{{ key }}" class="text-decoration-none"> #}
+                        #{{ index }}
+                    {# </a> #}
+                </td>
+                {% set property = "avatarUrl" %}
+                {% set value = repo.avatarUrl%}
+
+                 <td class="kern-table__cell" data-property="{{ property }}" data-hidden="{{isHiddenProperty}}">
+                            {% if value != "" %}
+                                <img width="20" height="20" src="{{ value | safe }}" />
+                            {% endif %}
+
+                    </td>
+                {% for property, value in repo %}
+                {% set isHiddenProperty = hideProperties | contains(property) %}
+
+                {# {% if not hideProperties | contains(property) %} #}
+                <td class="kern-table__cell" data-property="{{ property }}" data-hidden="{{isHiddenProperty}}">
+                        {% if property | contains('avatar') %}
+                            {# {% if value != "" %}
+                                <img width="20" height="20" src="{{ value | safe }}" />
+                            {% endif %} #}
+                            {% elif property == 'webUrl' %}
+                            <a href="{{ value | safe }}" class="text-decoration-none" target="_blank">{{property}}</a>
+
+                        {% else %}
+                            <span class="skill-search hidden">{{ value }}</span>
+                            <span class="skill-value">{{ value }}</span>
+                        {% endif %}
+                    </td>
+    {# {% endif %} #}
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </table>
+</div>

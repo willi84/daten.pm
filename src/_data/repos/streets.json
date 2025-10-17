@@ -1,0 +1,19 @@
+ {
+        "owner": "opendata.potsdam.de",
+        "data": {
+            "test_straße": {
+                "zip": "14467",
+                "city": "Potsdam",
+                "length_m": 1234,
+                "lanes": 2,
+                "type": "residential"
+            },
+            "beispielweg": {
+                "zip": "14469",
+                "city": "Potsdam",
+                "length_m": 567,
+                "lanes": 1,
+                "type": "public"
+            }
+        }
+    }

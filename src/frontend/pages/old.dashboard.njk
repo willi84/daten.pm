@@ -1,0 +1,42 @@
+---
+layout: base.template.njk
+title: Welcome to coconat.space
+navigation: true
+footer: true
+---
+ {%- from "./../templates/_setup/macros/component.macro.njk" import component -%}
+
+ {# {{ repos | dump}} #}
+ {% set hideProperties = ['private', 'full_name']%}
+
+
+ <div data-search="repos">
+    {% for property, item in repos.properties %}
+        {% set isHiddenKey = hideProperties | contains(property) %}
+            <button type="button" class="btn btn-primary btn-sm" data-active="{{ not isHiddenKey }}"  data-filter-type="property" data-filter-value="{{ property }}">
+     {# <span class="badge bg-secondary">{{item.count}}</span> #}
+     {{property}}
+     {# <span class="badge bg-secondary">{{item.count}}</span> #}
+   </button>
+    {% endfor %}
+<input type="text" class="form-control mb-3" placeholder="Search repositories..." aria-label="Search repositories..." />
+    <table class="table">
+        {% for key, repo in repos.data %}
+            <tr data-repo="{{ key }}" data-active="true" data-searchable>
+                {% for property, value in repo %}
+                {% set isHiddenProperty = hideProperties | contains(property) %}
+
+                {# {% if not hideProperties | contains(property) %} #}
+                <td data-property="{{ property }}" data-hidden="{{isHiddenProperty}}">
+                        {% if value | contains('avatars') %}
+                            <img width="20" height="20" src="{{ value | safe }}" />
+                        {% else %}
+                            {{ value }}
+                        {% endif %}
+                    </td>
+    {# {% endif %} #}
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </table>
+</div>

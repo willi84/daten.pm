@@ -1,0 +1,136 @@
+---
+layout: base.template.njk
+title: library of components
+navigation: true
+footer: true
+---
+
+{%- from "./../../templates/_setup/macros/component.macro.njk" import component -%}
+
+{%
+    set data = docs
+%}
+
+<h2> Component </h2>
+
+{# {{docs | dump}}
+
+comps #}
+{% for key,item in docs %}
+{# KEY{{ key }} => Value {{ item.path }} <br /> #}
+    <div class="container my-4">
+        {# <h1 class="h3 mb-3">xxButton component – test snapshots</h1> #}
+
+        <div class="accordion" id="casesAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-${c.id}">
+                    <button class="accordion-button ${isFirst ? '' : 'collapsed'} " type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapse-${c.id}"
+                            aria-expanded="${isFirst ? 'true' : 'false'}"
+                            aria-controls="collapse-${c.id}">
+                        {{item.fileName}}
+                    </button>
+                </h2>
+                <div id="collapse-${c.id}" class="accordion-collapse collapse show ${isFirst ? 'show' : ''}"
+                    aria-labelledby="heading-${c.id}" data-bs-parent="#casesAccordion">
+                    <div class="accordion-body">
+                        {% renderFile item.path %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endfor %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{# 
+
+
+{{
+    component("button", {
+        text: "Click me22"
+    })
+}}
+<hr />
+
+Button-Link
+{{
+    component("button_link", {
+        "type": "link",
+        "text": "mit link"
+    })
+}}
+<hr />
+
+{{
+    component("button_link", {
+        "type": "button",
+        "text": "mit button"
+    })
+}}
+<hr />
+
+{{
+    component("button_link", {
+        "type": "cta",
+        "text": "mit cta"
+    })
+}}
+<hr />
+{{
+            component("button_link", {
+                class_modifier: 'btn btn-' + params.type ,
+                type_content: params.type_content or "",
+                type_button: params.type_button or "button",
+                text: "some text",
+                collapseID: params.collapseID,
+                collapseShow: params.collapseShow,
+                image_url: 'avatar_unknown.svg',
+                height: 25,
+                width: 25,
+                post_html: counterHTML | safeParamIf(params.counter)
+            })
+        }}
+
+<hr />
+{{
+    component('badge', {
+        type_content: 'error' | translate(lint.translations),
+        type_button: 'button',
+        text: 'unsuccessful checks',
+        counter: checksFAIL | len('records'),
+        collapseID: 'collapseErrors',
+        collapseShow: true,
+        class_modifier: 'text-uppercase text-decoration-none'
+    })
+}}
+<hr />
+{{
+    component('badge', {
+        type_content: 'ok' | translate(lint.translations),
+        type_button: 'link',
+        text: 'passed audits',
+        counter: checksOK | len('records'),
+        collapseID: 'collapseOK',
+        collapseShow: true,
+        class_modifier: 'text-uppercase text-decoration-none text-dark'
+    })
+}}
+
+<hr /> #}

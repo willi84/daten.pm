@@ -1,0 +1,37 @@
+[data-component="css-icon.atom"]{
+
+    /* shared base */
+    &[data-icon] {
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: -5px; /* fine-tune baseline alignment */
+        margin-right: 5px; /* space between icon and text */
+    }
+    /* red triangle ▲ (danger) */
+    &[data-icon="danger"]{
+        /* control size via the border size */
+        width: 0;
+        height: 0;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-bottom: 8px solid #dc3545; /* bootstrap danger red */
+
+    }
+
+
+    /* orange square ■ (warning) */
+    &[data-icon="warning"] {
+        width: 10px;
+        height: 10px;
+        background-color: #fd7e14; /* bootstrap orange */
+    }
+
+    /* green circle ● (ok/success) */
+    &[data-icon="success"] {
+        width: 10px;
+        height: 10px;
+        background-color: #198754; /* bootstrap green */
+        border-radius: 50%;
+    }
+}
+
