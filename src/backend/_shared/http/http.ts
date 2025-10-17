@@ -220,6 +220,9 @@ export const getResponse = (url: string, opts: any = {}): CurlItem => {
     const splitted = data.split(/\r?\n\r?\n/);
     const header = splitted[0];
     const httpItem = getHttpItemFromHeader(header);
+    if (httpItem['status'] === '0') {
+        console.log('rawData', rawData);
+    }
     // all splitted except 0
     // TODO: check if hasHeader for opencode
     const hasHeader =
