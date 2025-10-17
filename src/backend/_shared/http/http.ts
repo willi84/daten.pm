@@ -56,7 +56,6 @@ export const getHttpItemFromHeader = (header: string): HTTPStatusBase => {
             //     .trim();
         } else if (key.trim() !== '') {
             // avoid empty key
-            console.log(key);
             httpItem[`${key}`] = item.value;
         }
     });
@@ -65,7 +64,6 @@ export const getHttpItemFromHeader = (header: string): HTTPStatusBase => {
         LOG.WARN('no status code found. set to 0');
         LOG.DEBUG(header);
     }
-    console.log(httpItem);
     return httpItem;
 };
 

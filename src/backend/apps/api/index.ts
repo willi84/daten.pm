@@ -1,3 +1,3 @@
-import { LOG } from '../../_shared/log/log';
+import { getCivicIssuesData } from './civic_issues/civic_issues';
 
-LOG.OK('API started');
+getCivicIssuesData();

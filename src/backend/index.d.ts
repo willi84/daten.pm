@@ -40,6 +40,9 @@ export type PlainObject<T = unknown> = Record<string, T> & {
 export type OPTS = {
     [key: string]: any;
 };
+export type JSON = {
+    [key: string]: any;
+};
 export type LOW_STR<S extends string> = S extends LOW_STR<S> ? S : never;
 export type UP_STR<S extends string> = S extends Uppercase<S> ? S : never;
 // export type MIX_STR<S extends string> =

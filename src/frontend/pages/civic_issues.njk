@@ -1,0 +1,53 @@
+---
+layout: base.template.njk
+title: Welcome to daten.pm
+navigation: true
+footer: true
+---
+ {%- from "./../templates/_setup/macros/component.macro.njk" import component -%}
+
+<div class="container-fluid my-5 text-center">
+    {{
+        component("image", {
+            image: main.logo.src,
+         class: "",
+         alt_prefix: main.logo.alt,
+         width: "25%",
+         height: "auto",
+         lazy: true
+       })
+    }}
+    <h2 class="mt-1">Mängelmelder Issues</h2>
+</div>
+{# Repos: {{raw.civic_issues | dump}} #}
+
+
+{# list of streets #}
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">state</th>
+      <th scope="col">category</th>
+      <th scope="col">text</th>
+      <th scope="col">street</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for item in repos.civic_issues.items %}
+    <tr>
+      <th scope="row">{{item.id}}</th>
+      <td>{{item.state}}</td>
+      <td>{{item.category.categoryName}}</td>
+      <td>{{item.originalText}}</td>
+      {% if item.address and item.address.address %}
+        <td>{{item.address.address.road}}</td>
+        {% else %}
+        <td> - </td>
+      {% endif %}
+
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+ 

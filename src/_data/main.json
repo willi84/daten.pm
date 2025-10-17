@@ -12,6 +12,16 @@
             "text": "Dashboard",
             "url": "dashboard",
             "type": "button"
+        },
+        {
+            "text": "Mängelmelder",
+            "url": "civic_issues",
+            "type": "button"
+        },
+        {
+            "text": "Koordinaten",
+            "url": "coords",
+            "type": "button"
         }
 
     ]
