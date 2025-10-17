@@ -188,6 +188,7 @@ export const getHttpItem = (
 export const getResponse = (url: string, opts: any = {}): CurlItem => {
     const token = (opts as any).token || '';
     const isDev = (opts as any).isDev || false;
+    const customUA = (opts as any).ua || '-H "User-Agent: nodejs" ';
     const start = new Date().getTime();
     const isGithubApi = url.indexOf('api.github.com') !== -1;
     const isGitlabApi = url.indexOf('gitlab') !== -1;
@@ -211,7 +212,7 @@ export const getResponse = (url: string, opts: any = {}): CurlItem => {
     const urlKey = isGithubApi ? 'github' : isGitlabApi ? 'gitlab' : 'default';
     const auth = `${TOKEN_KEYS[urlKey] ? `-H "${TOKEN_KEYS[urlKey]} ${token}" ` : ''}`;
 
-    const ua = isGithubApi ? '' : '-H "User-Agent: nodejs" ';
+    const ua = isGithubApi ? '' : customUA;
     // encodeURI important to avoid issues
     const finalCommand = `curl -s ${auth} ${ua} -i "${encodeURI(url)}" `;
     console.log('finalCommand', finalCommand);

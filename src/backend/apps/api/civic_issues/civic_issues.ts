@@ -144,7 +144,8 @@ export const getCivicIssuesData = () => {
                     substitue(API, {
                         LAT: item.coordinate.latitude,
                         LON: item.coordinate.longitude,
-                    })
+                    }),
+                    { ua: ' -A "daten.pm/1.0 (+https://daten.pm; contact@example.com)" ' }
                 );
                 const cnt = details.content;
                 if (details.status !== '200') {
