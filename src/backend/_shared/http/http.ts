@@ -214,6 +214,7 @@ export const getResponse = (url: string, opts: any = {}): CurlItem => {
     const ua = isGithubApi ? '' : '-H "User-Agent: nodejs" ';
     // encodeURI important to avoid issues
     const finalCommand = `curl -s ${auth} ${ua} -i "${encodeURI(url)}" `;
+    console.log('finalCommand', finalCommand);
     const rawData = command(finalCommand);
     let data = rawData.replace(/^\n/, ''); // remove first empty line if exists
     const splitted = data.split(/\r?\n\r?\n/);
