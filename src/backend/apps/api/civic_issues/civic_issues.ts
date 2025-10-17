@@ -122,7 +122,6 @@ export const getCivicIssuesData = () => {
     };
     const hasCachedCoord = FS.hasFile(coordFile);
     // console.log('total civic issues', result.total);
-    console.log(typeof FS.readFile(coordFile));
     const foundCoords: any = hasCachedCoord
         ? FS.readFile(coordFile) as object
         : {};
@@ -146,8 +145,17 @@ export const getCivicIssuesData = () => {
                         LAT: item.coordinate.latitude,
                         LON: item.coordinate.longitude,
                     })
-                ).content;
-                const addressNew = details ? JSON.parse(details) : {};
+                );
+                const cnt = details.content;
+                if (details.status !== '200') {
+                    LOG.FAIL(
+                        `Failed to fetch coord data for item ${item.id} at ${id}: ${details.status}`
+                    );
+                    console.log('response details');
+                    console.log(details);
+                    // continue;
+                }
+                const addressNew = cnt ? JSON.parse(cnt) : {};
                 foundCoords[`${id}`] = {
                     id,
                     address: addressNew,
