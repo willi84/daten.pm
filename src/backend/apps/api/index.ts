@@ -33,6 +33,7 @@ export const getStreets = () => {
             };
         }
     }
+    console.log(Object.keys(result).length)
     FS.writeFile('src/_data/streets.json', {
         data: Object.values(result),
     });
@@ -40,6 +41,7 @@ export const getStreets = () => {
     return result;
 }
 const streets = getStreets();
+// console.log(streets);
 
 const allData: any = {}
 // console.log(streets[0]);
