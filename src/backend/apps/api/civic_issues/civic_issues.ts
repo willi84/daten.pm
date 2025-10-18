@@ -175,7 +175,7 @@ export const getCivicIssuesData = (streets: any) => {
             }
             // console.log(details);
             const address = foundCoords[`${id}`].address;
-            console.log(address.address.road)
+            // console.log(address.road)
             const finalData: any = {
                 ...item,
                 address,
