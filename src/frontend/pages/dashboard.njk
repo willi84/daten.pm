@@ -106,12 +106,14 @@ footer: true
                     <small class="text-muted">Org: {{ org.display_name }} · DS-ID: {{ dataSet }}</small>
 
                     {# --- Civic Issues hübsch & kompakt --- #}
+                    {% if dataSet == "civic_issues"%}
                     {% set issueCount = 0 %}
                     {% for item in repos.civic_issues_final.items %}
                       {% if item.id and item.streetID and item.streetID == street_value.id %}
                         {% set issueCount = issueCount + 1 %}
                       {% endif %}
-                    {% endfor %}
+                      {% endfor %}
+                      
 
                     <div class="mt-3">
                       <div class="d-flex align-items-center gap-2 mb-2">
@@ -184,6 +186,7 @@ footer: true
                         <div class="text-muted small">Keine Civic Issues für diese Straße gefunden.</div>
                       {% endif %}
                     </div>
+                    {% endif %}
                     {# --- /Civic Issues --- #}
                   </li>
                 {% endfor %}
