@@ -56,6 +56,7 @@
     "re-install": "rm -rf node_modules && rm -rf _site && rm -f package-lock.json && npm install && du -sh node_modules",
     "re-install_cache": "rm -rf node_modules && rm -rf _site && rm -f package-lock.json && npm cache verify && npm install && du -sh node_modules",
     "dev": "npm run start_app -- lint & npm run start_app -- api  & npm run start_app -- atomic & npm run build:healthcheck_fast & npm-run-all --parallel dev:md watch:atomic watch:api dev:eleventy dev:vite watch:healthcheck",
+    "dev:no_health": "npm run start_app -- lint & npm run start_app -- api & npm-run-all --parallel dev:md watch:atomic watch:api dev:eleventy dev:vite",
     "dev:eleventy": "eleventy --config=.eleventy.shim.js --serve",
     "dev:vite": "vite",
     "healthcheck": "npm run start_app -- heahlthcheck",

@@ -1,3 +1,4 @@
+import { makeStreetID } from '../index';
 import { FS } from '../../../_shared/fs/fs';
 import { getResponse } from '../../../_shared/http/http';
 import { LOG } from '../../../_shared/log/log';
@@ -109,11 +110,12 @@ const sleepSync = (ms: number) => {
     }
 };
 
-export const getCivicIssuesData = () => {
+export const getCivicIssuesData = (streets: any) => {
     // try{
     const data = getData('civic_issues', REQUEST_CONFIG, true);
     const items = data.items;
     const finalFile = `src/_data/repos/civic_issues.json`;
+    const finalFileFinal = `src/_data/repos/civic_issues_final.json`;
     const coordFile = `src/_data/coords_cache.json`;
     // console.log(items);
     const result: { items: any[] } = {
@@ -173,9 +175,11 @@ export const getCivicIssuesData = () => {
             }
             // console.log(details);
             const address = foundCoords[`${id}`].address;
+            console.log(address.address.road)
             const finalData: any = {
                 ...item,
                 address,
+                // streetID: address && address.address
             };
             result.items.push(finalData);
         }
@@ -184,9 +188,42 @@ export const getCivicIssuesData = () => {
     } else {
         LOG.INFO(`Civic issues data already exists: ${finalFile},skip fetch.`);
     }
-    // } catch (error: any) {s
-    //     LOG.FAIL('Error fetching civic issues data:', error);
-    // }
+    if (!FS.hasFile(finalFileFinal)) {
+        const finalData = FS.readFile(finalFile);
+        const dataItems = JSON.parse(finalData as string);
+        // console.log(dataItems.items[0]);
+        const finalResult = {
+            items: [],
+        };
+        // dataItems.items = dataItems.items || [];
+        const max = dataItems.items.length;
+        for (const item of dataItems.items) {
+            const address = item.address;
+            let streetID = null;
+            let streetName = null;
+            if (address && address.address) {
+                streetName = address.address.road || null;
+                // console.log('street name:', streetName);
+                streetID = streetName ? makeStreetID(streetName) : null;
+                // if (streetID) {
+                //     item.streetID = streetID.id;
+                // } else {
+                //     item.streetID = null;
+                // }
+            } else {
+                item.streetID = null;
+            }
+            LOG.OK(`Processing item ${finalResult.items.length + 1}/${max}`);
+            finalResult.items.push({ ...item, streetID, streetName });
+            FS.writeFile(finalFileFinal, finalResult, 'replace', true);
+        }
+        return finalResult;
+    } else {
+        LOG.INFO(`Final civic issues data already exists: ${finalFileFinal},skip fetch.`);
+        const finalData = FS.readFile(finalFileFinal);
+        const dataItems = JSON.parse(finalData as string);
+        return dataItems;
+    }
 };
 // check
 

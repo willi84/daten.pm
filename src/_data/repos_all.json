@@ -1,0 +1,30 @@
+{
+    "data": {
+        "repo_list": {
+            "streets": {
+                "url": "https://opendata.potsdam.de/explore/dataset/strassenkataster-potsdam/information/",
+                "name": "Straßenkataster",
+                "org": "opendata.potsdam.de"
+            },
+            "civic_issues": {
+                "url": "https://mitgestalten.potsdam.de/de/maengel-melden",
+                "name": "Mängelmelder",
+                "org": "potsdam.de"
+            }
+        },
+        "organisations": {
+            "opendata.potsdam.de": {
+                "display_name": "opendata.potsdam.de",
+                "url": "https://opendata.potsdam.de"
+            },
+            "potsdam.de": {
+                "display_name": "potsdam.de",
+                "url": "https://potsdam.de"
+            }
+        }
+        
+    },
+    "properties": {
+        
+    }
+}

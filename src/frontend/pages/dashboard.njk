@@ -22,12 +22,189 @@ footer: true
 
 
 {# list of streets #}
-<div data-search="repos">
+{# <div data-search="repos">
     <ul class="list-group">
-        {% for street, street_value in repos.streets.data %}
-            
-            <li class="list-group-item">{{street}} [{{street_value.type}}] </li>
+        {% for street, street_value in repos.streets %}
+
+            <li class="list-group-item">{{street_value.strn}} [{{street_value.id}}] </li>
         {% endfor %}
     </ul>
 </div>
- 
+  #}
+<div data-search="repos" class="container py-3">
+
+  <!-- Suchfeld -->
+  <div class="mb-3">
+    <label for="street-search" class="form-label fw-semibold">Straße suchen</label>
+    <div class="input-group">
+      <span class="input-group-text">
+        <i class="bi bi-search" aria-hidden="true"></i>
+      </span>
+      <input
+        id="street-search"
+        class="form-control"
+        type="text"
+        placeholder="Z. B. „Hermann-Göritz-Straße“"
+        list="streets-list"
+        autocomplete="off"
+      />
+      <button class="btn btn-outline-secondary" type="button" id="clear-search">Zurücksetzen</button>
+    </div>
+  </div>
+
+  <!-- Datalist -->
+  <datalist id="streets-list">
+    {% for street, street_value in repos.streets %}
+      <option
+        value="{{ street_value.strn }}"
+        data-id="{{ street_value.id }}"
+      ></option>
+    {% endfor %}
+  </datalist>
+
+  <!-- Dezentere Infobox -->
+  <div id="street-info" class="border rounded p-3 mb-3 bg-light-subtle">
+    <div class="d-flex justify-content-between align-items-center">
+      <div>
+        <div class="text-muted small">Aktuelle Auswahl</div>
+        <div class="fw-semibold text-body" id="street-name">Bitte eine Straße auswählen.</div>
+      </div>
+      <span class="badge bg-secondary-subtle text-secondary" id="street-id">—</span>
+    </div>
+  </div>
+
+  <!-- Dataset-Liste -->
+  <div id="dataset-list">
+    <ul class="list-group">
+      {% for street, street_value in repos.streets %}
+        {% set dataSets = repos.all[street_value.id] %}
+        <li
+          class="list-group-item d-none bg-body-tertiary"
+          data-street-id="{{ street_value.id }}"
+          data-street-name="{{ street_value.strn }}"
+        >
+          <div class="d-flex justify-content-between align-items-start">
+            <div>
+              <div class="fw-semibold mb-2">
+                {{ street_value.strn }}
+                <span class="badge bg-light text-body-secondary border ms-2">ID: {{ street_value.id }}</span>
+              </div>
+
+              <ul class="mt-2 mb-0 ps-3">
+                {% for dataSet in dataSets.dataSet %}
+                  {% set repo = repos_all.data.repo_list[dataSet] %}
+                  {% set org = repos_all.data.organisations[repo.org] %}
+                  <li class="mb-2">
+                    <a
+                      href="{{ repo.url or ('https://example.com/repo/' + dataSet) }}"
+                      target="_blank"
+                      class="fw-semibold link-primary text-decoration-none"
+                    >
+                      🔗 {{ repo.name }}
+                    </a>
+                    <br/>
+                    <small class="text-muted">
+                      Org: {{ org.display_name }} · DS-ID: {{ dataSet }}
+
+                    </small>
+                    
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+
+            <button
+              type="button"
+              class="btn btn-outline-primary btn-sm align-self-start select-street"
+              data-id="{{ street_value.id }}"
+              data-name="{{ street_value.strn }}"
+            >
+              Anzeigen
+            </button>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <input type="hidden" id="street-id-hidden" name="street_id" value="">
+</div>
+
+<script>
+(function () {
+  const input         = document.getElementById('street-search');
+  const clearBtn      = document.getElementById('clear-search');
+  const datalistOpts  = Array.from(document.querySelectorAll('#streets-list option'));
+  const listItems     = Array.from(document.querySelectorAll('#dataset-list .list-group-item'));
+  const infoNameEl    = document.getElementById('street-name');
+  const infoIdEl      = document.getElementById('street-id');
+  const hiddenIdInput = document.getElementById('street-id-hidden');
+
+  function showOnly(streetId) {
+    listItems.forEach(li => {
+      const match = li.dataset.streetId === streetId;
+      li.classList.toggle('d-none', !match);
+      li.classList.toggle('active', match);
+      li.classList.toggle('bg-body', match);
+      li.classList.toggle('bg-body-tertiary', !match);
+    });
+  }
+
+  function resetView() {
+    input.value = '';
+    infoNameEl.textContent = 'Bitte eine Straße auswählen.';
+    infoIdEl.textContent = '—';
+    hiddenIdInput.value = '';
+    listItems.forEach(li => {
+      li.classList.add('d-none');
+      li.classList.remove('active', 'bg-body');
+      li.classList.add('bg-body-tertiary');
+    });
+  }
+
+  function applySelectionById(streetId, streetName) {
+    if (!streetId) return;
+    infoNameEl.textContent = streetName || '—';
+    infoIdEl.textContent   = streetId;
+    hiddenIdInput.value    = streetId;
+    showOnly(streetId);
+  }
+
+  input.addEventListener('input', () => {
+    const val = input.value.trim();
+    const opt = datalistOpts.find(o => o.value === val);
+    if (opt) {
+      applySelectionById(opt.dataset.id, opt.value);
+    } else {
+      infoNameEl.textContent = 'Keine gültige Straße ausgewählt.';
+      infoIdEl.textContent   = '—';
+      hiddenIdInput.value    = '';
+      listItems.forEach(li => li.classList.add('d-none'));
+    }
+  });
+
+  document.getElementById('dataset-list').addEventListener('click', (e) => {
+    const btn = e.target.closest('.select-street');
+    if (!btn) return;
+    applySelectionById(btn.dataset.id, btn.dataset.name);
+    input.value = btn.dataset.name;
+  });
+
+  clearBtn.addEventListener('click', resetView);
+
+  // Anfangszustand
+  resetView();
+})();
+</script>
+
+<style>
+/* kleine visuelle Verbesserungen */
+#dataset-list a.link-primary {
+  color: var(--bs-primary);
+  transition: color 0.2s ease;
+}
+#dataset-list a.link-primary:hover {
+  color: var(--bs-primary-text-emphasis);
+  text-decoration: underline;
+}
+</style>
