@@ -33,7 +33,7 @@ footer: true
   </thead>
   {# {{repos.coords_cache | dump}} #}
   <tbody>repos.coords_cached
-    {% for key, item in repos.coords_cache %}
+    {% for key, item in coords_cache %}
     <tr>
       <th scope="row">{{item.id}}</th>
       <td>{{item.address.address.road}} {{item.address.address.house_number}}</td>
