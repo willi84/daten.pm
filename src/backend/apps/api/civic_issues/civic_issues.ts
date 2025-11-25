@@ -1,5 +1,5 @@
 import { FS } from '../../../_shared/fs/fs';
-import { getResponse } from '../../../_shared/http/http';
+import { getHttpBase, getResponse } from '../../../_shared/http/http';
 import { LOG } from '../../../_shared/log/log';
 import { substitute } from '../../../_shared/tools/tools';
 import { generateID, sleepSync } from '../_shared/utils/utils';
@@ -17,9 +17,9 @@ import {
 import { FILE_ITEM } from '../endpoints/endpoints';
 
 LOG.OK('API started');
-export const getDataByAPI = (target: string) => {
+export const getDataByAPI = (target: string, opts = {}) => {
     // LOG.INFO(`Fetching ${target} data from API...`);
-    const data = getResponse(target);
+    const data = getResponse(target, opts );
     if (data && data.content) {
         // LOG.OK(`Data fetched successfully from ${target}`);
         // LOG.DEBUG(data.content);
@@ -43,7 +43,10 @@ export const getTargetItems = (requestConfig: REQUEST_PARAMS): object => {
             OFFSET: requestConfig.OFFSET_START.toString(),
         });
         // LOG.INFO(`Fetching data from ${target}...`);
-        const data = getDataByAPI(target) as any;
+        const opts = { method: 'GET', timeout: '10.0' };
+        const status = getHttpBase(target, opts);
+        LOG.OK(`HTTP Status for ${target}: ${status.status}`);
+        const data = getDataByAPI(target, opts) as any;
         // console.log(target);
         // console.log(data);
         const maxItems = data[requestConfig.MAX_ITEMS];
