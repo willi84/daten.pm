@@ -229,12 +229,16 @@ export const getResponse = (url: string, opts: any = {}): CurlItem => {
     const finalCommand = `curl -s ${auth} ${ua} -i "${encodeURI(url)}" `;
     // console.log('finalCommand', finalCommand);
     const rawData = command(finalCommand);
+
     let data = rawData.replace(/^\n/, ''); // remove first empty line if exists
     const splitted = data.split(/\r?\n\r?\n/);
     const header = splitted[0];
     const httpItem = getHttpItemFromHeader(header);
     if (httpItem['status'] === '0') {
         console.log('rawData', rawData);
+    } else if(httpItem['status'] !== '200') {
+        LOG.WARN(`HTTP Status for ${url}: ${httpItem['status']} - ${httpItem['statusMessage']}`);
+        LOG.DEBUG(finalCommand)
     }
     // all splitted except 0
     // TODO: check if hasHeader for opencode
