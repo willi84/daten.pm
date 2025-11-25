@@ -1,3 +1,4 @@
+import { get } from 'http';
 import { getResponse } from '../../../../_shared/http/http';
 import { LOG } from '../../../../_shared/log/log';
 import { substitute } from '../../../../_shared/tools/tools';
@@ -10,6 +11,15 @@ import {
     GEO_ID,
     UPDATE_COORD_RESULT,
 } from './geo.d';
+
+const getJSON = (content: string): object => {
+    try {
+        return JSON.parse(content);
+    } catch (error) {
+        LOG.FAIL(`Failed to parse JSON content: ${error}`);
+        return {};
+    }
+}
 
 /**
  * 🎯 get the details to a geo position
@@ -25,7 +35,8 @@ export const getReverseGeoData = (coord: COORD): ADDRESS_ITEM => {
         { ua: ' -A "daten.pm/1.0 (+https://daten.pm; contact@example.com)" ' }
     );
     const cnt = details.content;
-    const address = cnt ? JSON.parse(cnt) : {};
+    // const address = cnt ? JSON.parse(cnt) : {};
+    const address = getJSON(cnt);
     const hasLatLon = address.lat !== undefined && address.lon !== undefined;
     if (details.status !== '200' || !hasLatLon || address.error) {
         LOG.FAIL(
