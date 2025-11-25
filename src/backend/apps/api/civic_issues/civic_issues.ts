@@ -43,7 +43,8 @@ export const getTargetItems = (requestConfig: REQUEST_PARAMS): object => {
             OFFSET: requestConfig.OFFSET_START.toString(),
         });
         // LOG.INFO(`Fetching data from ${target}...`);
-        const opts = { method: 'GET', timeout: '10.0', ua: ' -A "daten.pm/1.0 (+https://daten.pm;" '};
+        const opts = { method: 'GET', timeout: '10.0'};
+        // const opts = { method: 'GET', timeout: '10.0', ua: ' -A "daten.pm/1.0 (+https://daten.pm;" '};
         const status = getHttpBase(target, opts);
         LOG.OK(`HTTP Status for ${target}: ${status.status}`);
         const data = getDataByAPI(target, opts) as any;
