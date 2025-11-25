@@ -80,7 +80,8 @@
         "strn": "Benzstr.",
         "id": "benzstr",
         "synonyms": [
-            "Benzstr."
+            "Benzstr.",
+            "Benzstraße"
         ]
     },
     "binsenhof": {
@@ -269,7 +270,8 @@
         "strn": "Bendastr.",
         "id": "bendastr",
         "synonyms": [
-            "Bendastr."
+            "Bendastr.",
+            "Bendastraße"
         ]
     },
     "berliner_str": {
@@ -451,7 +453,8 @@
         "strn": "Amundsenstr.",
         "id": "amundsenstr",
         "synonyms": [
-            "Amundsenstr."
+            "Amundsenstr.",
+            "Amundsenstraße"
         ]
     },
     "an_der_windmuehle": {
@@ -542,7 +545,8 @@
         "strn": "Döberitzer Str.",
         "id": "doeberitzer_str",
         "synonyms": [
-            "Döberitzer Str."
+            "Döberitzer Str.",
+            "Döberitzer Straße"
         ]
     },
     "ehrenpfortenbergstr": {
@@ -584,7 +588,8 @@
         "strn": "Friedrich-Ebert-Str.",
         "id": "friedrich_ebert_str",
         "synonyms": [
-            "Friedrich-Ebert-Str."
+            "Friedrich-Ebert-Str.",
+            "Friedrich-Ebert-Straße"
         ]
     },
     "friedrich_engels_str": {
@@ -661,7 +666,8 @@
         "strn": "Gutenbergstr.",
         "id": "gutenbergstr",
         "synonyms": [
-            "Gutenbergstr."
+            "Gutenbergstr.",
+            "Gutenbergstraße"
         ]
     },
     "hans_marchwitza_ring": {
@@ -696,7 +702,8 @@
         "strn": "Hermann-Kasack-Str.",
         "id": "hermann_kasack_str",
         "synonyms": [
-            "Hermann-Kasack-Str."
+            "Hermann-Kasack-Str.",
+            "Hermann-Kasack-Straße"
         ]
     },
     "horstweg": {
@@ -857,7 +864,8 @@
         "strn": "Meistersingerstr.",
         "id": "meistersingerstr",
         "synonyms": [
-            "Meistersingerstr."
+            "Meistersingerstr.",
+            "Meistersingerstraße"
         ]
     },
     "moebelhof": {
@@ -997,7 +1005,8 @@
         "strn": "Rückertstr.",
         "id": "rueckertstr",
         "synonyms": [
-            "Rückertstr."
+            "Rückertstr.",
+            "Rückertstraße"
         ]
     },
     "sacrower_allee": {
@@ -1067,7 +1076,8 @@
         "strn": "Slatan-Dudow-Str.",
         "id": "slatan_dudow_str",
         "synonyms": [
-            "Slatan-Dudow-Str."
+            "Slatan-Dudow-Str.",
+            "Slatan-Dudow-Straße"
         ]
     },
     "sonnenlandstr": {
@@ -1214,7 +1224,8 @@
         "strn": "Zeppelinstr.",
         "id": "zeppelinstr",
         "synonyms": [
-            "Zeppelinstr."
+            "Zeppelinstr.",
+            "Zeppelinstraße"
         ]
     },
     "obere_donarstr": {
@@ -1284,7 +1295,8 @@
         "strn": "Jochen-Klepper-Str.",
         "id": "jochen_klepper_str",
         "synonyms": [
-            "Jochen-Klepper-Str."
+            "Jochen-Klepper-Str.",
+            "Jochen-Klepper-Straße"
         ]
     },
     "rehsprung": {
@@ -1347,7 +1359,8 @@
         "strn": "Siemensstr.",
         "id": "siemensstr",
         "synonyms": [
-            "Siemensstr."
+            "Siemensstr.",
+            "Siemensstraße"
         ]
     },
     "kirschenstieg": {
@@ -1375,7 +1388,8 @@
         "strn": "Steinstr.",
         "id": "steinstr",
         "synonyms": [
-            "Steinstr."
+            "Steinstr.",
+            "Steinstraße"
         ]
     },
     "kunersdorfer_str": {
@@ -1410,7 +1424,8 @@
         "strn": "Leonardo-da-Vinci-Str.",
         "id": "leonardo_da_vinci_str",
         "synonyms": [
-            "Leonardo-da-Vinci-Str."
+            "Leonardo-da-Vinci-Str.",
+            "Leonardo-da-Vinci-Straße"
         ]
     },
     "lotte_laserstein_str": {
@@ -1466,7 +1481,8 @@
         "strn": "Drewitzer Str.",
         "id": "drewitzer_str",
         "synonyms": [
-            "Drewitzer Str."
+            "Drewitzer Str.",
+            "Drewitzer Straße"
         ]
     },
     "duererstr": {
@@ -1592,7 +1608,8 @@
         "strn": "Gertrud-Feiertag-Str.",
         "id": "gertrud_feiertag_str",
         "synonyms": [
-            "Gertrud-Feiertag-Str."
+            "Gertrud-Feiertag-Str.",
+            "Gertrud-Feiertag-Straße"
         ]
     },
     "hasensprung": {
@@ -1606,7 +1623,8 @@
         "strn": "Hebbelstr.",
         "id": "hebbelstr",
         "synonyms": [
-            "Hebbelstr."
+            "Hebbelstr.",
+            "Hebbelstraße"
         ]
     },
     "hermann_maechtig_str": {
@@ -1697,7 +1715,8 @@
         "strn": "Karl-Liebknecht-Str.",
         "id": "karl_liebknecht_str",
         "synonyms": [
-            "Karl-Liebknecht-Str."
+            "Karl-Liebknecht-Str.",
+            "Karl-Liebknecht-Straße"
         ]
     },
     "kartzower_dorfstr": {
@@ -1802,7 +1821,8 @@
         "strn": "Mangerstr.",
         "id": "mangerstr",
         "synonyms": [
-            "Mangerstr."
+            "Mangerstr.",
+            "Mangerstraße"
         ]
     },
     "mittelweg": {
@@ -1851,7 +1871,8 @@
         "strn": "Potsdamer Str.",
         "id": "potsdamer_str",
         "synonyms": [
-            "Potsdamer Str."
+            "Potsdamer Str.",
+            "Potsdamer Straße"
         ]
     },
     "prager_str": {
@@ -1998,7 +2019,8 @@
         "strn": "Spindelstr.",
         "id": "spindelstr",
         "synonyms": [
-            "Spindelstr."
+            "Spindelstr.",
+            "Spindelstraße"
         ]
     },
     "staudenweg": {
@@ -2096,14 +2118,16 @@
         "strn": "Wollestr.",
         "id": "wollestr",
         "synonyms": [
-            "Wollestr."
+            "Wollestr.",
+            "Wollestraße"
         ]
     },
     "ziolkowskistr": {
         "strn": "Ziolkowskistr.",
         "id": "ziolkowskistr",
         "synonyms": [
-            "Ziolkowskistr."
+            "Ziolkowskistr.",
+            "Ziolkowskistraße"
         ]
     },
     "zu_den_drei_mohren": {
@@ -2152,7 +2176,8 @@
         "strn": "Große Weinmeisterstr.",
         "id": "grosse_weinmeisterstr",
         "synonyms": [
-            "Große Weinmeisterstr."
+            "Große Weinmeisterstr.",
+            "Große Weinmeisterstraße"
         ]
     },
     "h_v_kleist_str": {
@@ -2201,7 +2226,8 @@
         "strn": "Kietzer Str.",
         "id": "kietzer_str",
         "synonyms": [
-            "Kietzer Str."
+            "Kietzer Str.",
+            "Kietzer Straße"
         ]
     },
     "klabautermann": {
@@ -2222,7 +2248,8 @@
         "strn": "Lotte-Pulewka-Str.",
         "id": "lotte_pulewka_str",
         "synonyms": [
-            "Lotte-Pulewka-Str."
+            "Lotte-Pulewka-Str.",
+            "Lotte-Pulewka-Straße"
         ]
     },
     "marquardter_chaussee": {
@@ -2264,7 +2291,8 @@
         "strn": "Rudi-Ball-Str.",
         "id": "rudi_ball_str",
         "synonyms": [
-            "Rudi-Ball-Str."
+            "Rudi-Ball-Str.",
+            "Rudi-Ball-Straße"
         ]
     },
     "rudolf_moos_str": {
@@ -2285,7 +2313,8 @@
         "strn": "Saarmunder Str.",
         "id": "saarmunder_str",
         "synonyms": [
-            "Saarmunder Str."
+            "Saarmunder Str.",
+            "Saarmunder Straße"
         ]
     },
     "schmidtweg": {
@@ -2320,7 +2349,8 @@
         "strn": "Stormstr.",
         "id": "stormstr",
         "synonyms": [
-            "Stormstr."
+            "Stormstr.",
+            "Stormstraße"
         ]
     },
     "theodor_hoppe_weg": {
@@ -2369,7 +2399,8 @@
         "strn": "Wetzlarer Str.",
         "id": "wetzlarer_str",
         "synonyms": [
-            "Wetzlarer Str."
+            "Wetzlarer Str.",
+            "Wetzlarer Straße"
         ]
     },
     "zum_bahnhof_pirschheide": {
@@ -2551,7 +2582,8 @@
         "strn": "Benkertstr.",
         "id": "benkertstr",
         "synonyms": [
-            "Benkertstr."
+            "Benkertstr.",
+            "Benkertstraße"
         ]
     },
     "birkenstr": {
@@ -2586,7 +2618,8 @@
         "strn": "Breite Str.",
         "id": "breite_str",
         "synonyms": [
-            "Breite Str."
+            "Breite Str.",
+            "Breite Straße"
         ]
     },
     "bruno_taut_str": {
@@ -2740,7 +2773,8 @@
         "strn": "Gontardstr.",
         "id": "gontardstr",
         "synonyms": [
-            "Gontardstr."
+            "Gontardstr.",
+            "Gontardstraße"
         ]
     },
     "grasmueckenring": {
@@ -2782,7 +2816,8 @@
         "strn": "Haeckelstr.",
         "id": "haeckelstr",
         "synonyms": [
-            "Haeckelstr."
+            "Haeckelstr.",
+            "Haeckelstraße"
         ]
     },
     "hauptweg": {
@@ -2894,7 +2929,8 @@
         "strn": "Leipziger Str.",
         "id": "leipziger_str",
         "synonyms": [
-            "Leipziger Str."
+            "Leipziger Str.",
+            "Leipziger Straße"
         ]
     },
     "lennestr": {
@@ -2915,14 +2951,16 @@
         "strn": "Lessingstr.",
         "id": "lessingstr",
         "synonyms": [
-            "Lessingstr."
+            "Lessingstr.",
+            "Lessingstraße"
         ]
     },
     "lindstedter_str": {
         "strn": "Lindstedter Str.",
         "id": "lindstedter_str",
         "synonyms": [
-            "Lindstedter Str."
+            "Lindstedter Str.",
+            "Lindstedter Straße"
         ]
     },
     "ludwig_boltzmann_str": {
@@ -2964,7 +3002,8 @@
         "strn": "Max-Born-Str.",
         "id": "max_born_str",
         "synonyms": [
-            "Max-Born-Str."
+            "Max-Born-Str.",
+            "Max-Born-Straße"
         ]
     },
     "meisenweg": {
@@ -3013,7 +3052,8 @@
         "strn": "Pierre-de-Gayette-Str.",
         "id": "pierre_de_gayette_str",
         "synonyms": [
-            "Pierre-de-Gayette-Str."
+            "Pierre-de-Gayette-Str.",
+            "Pierre-de-Gayette-Straße"
         ]
     },
     "pomonaring": {
@@ -3293,7 +3333,8 @@
         "strn": "Amtsstr.",
         "id": "amtsstr",
         "synonyms": [
-            "Amtsstr."
+            "Amtsstr.",
+            "Amtsstraße"
         ]
     },
     "an_der_alten_zauche": {
@@ -3622,7 +3663,8 @@
         "strn": "Anni-von-Gottberg-Str.",
         "id": "anni_von_gottberg_str",
         "synonyms": [
-            "Anni-von-Gottberg-Str."
+            "Anni-von-Gottberg-Str.",
+            "Anni-von-Gottberg-Straße"
         ]
     },
     "an_der_jubelitz": {
@@ -3636,7 +3678,8 @@
         "strn": "August-Bebel-Str.",
         "id": "august_bebel_str",
         "synonyms": [
-            "August-Bebel-Str."
+            "August-Bebel-Str.",
+            "August-Bebel-Straße"
         ]
     },
     "an_der_kornmuehle": {
@@ -3699,7 +3742,8 @@
         "strn": "Behlertstr.",
         "id": "behlertstr",
         "synonyms": [
-            "Behlertstr."
+            "Behlertstr.",
+            "Behlertstraße"
         ]
     },
     "bergstr": {
@@ -3916,7 +3960,8 @@
         "strn": "Friesenstr.",
         "id": "friesenstr",
         "synonyms": [
-            "Friesenstr."
+            "Friesenstr.",
+            "Friesenstraße"
         ]
     },
     "ga_nuthestrand_2": {
@@ -3930,7 +3975,8 @@
         "strn": "Fritz-Lang-Str.",
         "id": "fritz_lang_str",
         "synonyms": [
-            "Fritz-Lang-Str."
+            "Fritz-Lang-Str.",
+            "Fritz-Lang-Straße"
         ]
     },
     "ga_unverzagt_rosenweg": {
@@ -4168,7 +4214,8 @@
         "strn": "Kopernikusstr.",
         "id": "kopernikusstr",
         "synonyms": [
-            "Kopernikusstr."
+            "Kopernikusstr.",
+            "Kopernikusstraße"
         ]
     },
     "liefelds_grund": {
@@ -4238,7 +4285,8 @@
         "strn": "Nedlitzer Str.",
         "id": "nedlitzer_str",
         "synonyms": [
-            "Nedlitzer Str."
+            "Nedlitzer Str.",
+            "Nedlitzer Straße"
         ]
     },
     "nuthewinkel": {
@@ -4287,7 +4335,8 @@
         "strn": "Peter-Huchel-Str.",
         "id": "peter_huchel_str",
         "synonyms": [
-            "Peter-Huchel-Str."
+            "Peter-Huchel-Str.",
+            "Peter-Huchel-Straße"
         ]
     },
     "plantagenweg": {
@@ -4420,7 +4469,8 @@
         "strn": "Templiner Str.",
         "id": "templiner_str",
         "synonyms": [
-            "Templiner Str."
+            "Templiner Str.",
+            "Templiner Straße"
         ]
     },
     "tristanstr": {
@@ -4469,7 +4519,8 @@
         "strn": "Weinbergstr.",
         "id": "weinbergstr",
         "synonyms": [
-            "Weinbergstr."
+            "Weinbergstr.",
+            "Weinbergstraße"
         ]
     },
     "werderscher_weg": {
@@ -4553,7 +4604,8 @@
         "strn": "Fontanestr.",
         "id": "fontanestr",
         "synonyms": [
-            "Fontanestr."
+            "Fontanestr.",
+            "Fontanestraße"
         ]
     },
     "freiheitstr": {
@@ -4567,7 +4619,8 @@
         "strn": "Friedrich-W.-Murnau-Str.",
         "id": "friedrich_w_murnau_str",
         "synonyms": [
-            "Friedrich-W.-Murnau-Str."
+            "Friedrich-W.-Murnau-Str.",
+            "Friedrich-W.-Murnau-Straße"
         ]
     },
     "ga_alter_tornow": {
@@ -4623,7 +4676,8 @@
         "strn": "Grünstr.",
         "id": "gruenstr",
         "synonyms": [
-            "Grünstr."
+            "Grünstr.",
+            "Grünstraße"
         ]
     },
     "gustav_meyer_str": {
@@ -4721,7 +4775,8 @@
         "strn": "Joliot-Curie-Str.",
         "id": "joliot_curie_str",
         "synonyms": [
-            "Joliot-Curie-Str."
+            "Joliot-Curie-Str.",
+            "Joliot-Curie-Straße"
         ]
     },
     "joseph_v_sternberg_str": {
@@ -4973,7 +5028,8 @@
         "strn": "Burgstr.",
         "id": "burgstr",
         "synonyms": [
-            "Burgstr."
+            "Burgstr.",
+            "Burgstraße"
         ]
     },
     "allee_nach_glienicke": {
@@ -5155,7 +5211,8 @@
         "strn": "Charlottenstr.",
         "id": "charlottenstr",
         "synonyms": [
-            "Charlottenstr."
+            "Charlottenstr.",
+            "Charlottenstraße"
         ]
     },
     "christophorusweg": {
@@ -5239,14 +5296,16 @@
         "strn": "Forststr.",
         "id": "forststr",
         "synonyms": [
-            "Forststr."
+            "Forststr.",
+            "Forststraße"
         ]
     },
     "friedrich_wilhelm_boelcke_str": {
         "strn": "Friedrich-Wilhelm-Boelcke-Str.",
         "id": "friedrich_wilhelm_boelcke_str",
         "synonyms": [
-            "Friedrich-Wilhelm-Boelcke-Str."
+            "Friedrich-Wilhelm-Boelcke-Str.",
+            "Friedrich-Wilhelm-Boelcke-Straße"
         ]
     },
     "ga_anglerwiese": {
@@ -5302,7 +5361,8 @@
         "strn": "Grotrianstr.",
         "id": "grotrianstr",
         "synonyms": [
-            "Grotrianstr."
+            "Grotrianstr.",
+            "Grotrianstraße"
         ]
     },
     "gruener_weg_gross_glienicke": {
@@ -5393,7 +5453,8 @@
         "strn": "Karl-Marx-Str.",
         "id": "karl_marx_str",
         "synonyms": [
-            "Karl-Marx-Str."
+            "Karl-Marx-Str.",
+            "Karl-Marx-Straße"
         ]
     },
     "katharinastr": {
@@ -5435,7 +5496,8 @@
         "strn": "Kurfürstenstr.",
         "id": "kurfuerstenstr",
         "synonyms": [
-            "Kurfürstenstr."
+            "Kurfürstenstr.",
+            "Kurfürstenstraße"
         ]
     },
     "landhausstr": {
@@ -5575,7 +5637,8 @@
         "strn": "Schopenhauerstr.",
         "id": "schopenhauerstr",
         "synonyms": [
-            "Schopenhauerstr."
+            "Schopenhauerstr.",
+            "Schopenhauerstraße"
         ]
     },
     "sophie_alberti_str": {
@@ -5876,7 +5939,8 @@
         "strn": "Havelstr.",
         "id": "havelstr",
         "synonyms": [
-            "Havelstr."
+            "Havelstr.",
+            "Havelstraße"
         ]
     },
     "hegemeisterweg": {
@@ -6044,7 +6108,8 @@
         "strn": "Sonnentaustr.",
         "id": "sonnentaustr",
         "synonyms": [
-            "Sonnentaustr."
+            "Sonnentaustr.",
+            "Sonnentaustraße"
         ]
     },
     "strasse_des_friedens": {
@@ -6072,14 +6137,16 @@
         "strn": "Waldstr.",
         "id": "waldstr",
         "synonyms": [
-            "Waldstr."
+            "Waldstr.",
+            "Waldstraße"
         ]
     },
     "wattstr": {
         "strn": "Wattstr.",
         "id": "wattstr",
         "synonyms": [
-            "Wattstr."
+            "Wattstr.",
+            "Wattstraße"
         ]
     },
     "wildkirschenweg": {
@@ -6121,7 +6188,8 @@
         "strn": "Clara-Zetkin-Str.",
         "id": "clara_zetkin_str",
         "synonyms": [
-            "Clara-Zetkin-Str."
+            "Clara-Zetkin-Str.",
+            "Clara-Zetkin-Straße"
         ]
     },
     "dianastr": {
@@ -6191,14 +6259,16 @@
         "strn": "Flotowstr.",
         "id": "flotowstr",
         "synonyms": [
-            "Flotowstr."
+            "Flotowstr.",
+            "Flotowstraße"
         ]
     },
     "franzoesische_str": {
         "strn": "Französische Str.",
         "id": "franzoesische_str",
         "synonyms": [
-            "Französische Str."
+            "Französische Str.",
+            "Französische Straße"
         ]
     },
     "fritz_rumpf_str": {
@@ -6226,7 +6296,8 @@
         "strn": "Galileistr.",
         "id": "galileistr",
         "synonyms": [
-            "Galileistr."
+            "Galileistr.",
+            "Galileistraße"
         ]
     },
     "gartenstr_fahrland": {
@@ -6324,7 +6395,8 @@
         "strn": "Hessestr.",
         "id": "hessestr",
         "synonyms": [
-            "Hessestr."
+            "Hessestr.",
+            "Hessestraße"
         ]
     },
     "hoehenstr": {
@@ -6401,7 +6473,8 @@
         "strn": "Kiezstr.",
         "id": "kiezstr",
         "synonyms": [
-            "Kiezstr."
+            "Kiezstr.",
+            "Kiezstraße"
         ]
     },
     "koenigsdamm": {
@@ -6443,7 +6516,8 @@
         "strn": "Gluckstr.",
         "id": "gluckstr",
         "synonyms": [
-            "Gluckstr."
+            "Gluckstr.",
+            "Gluckstraße"
         ]
     },
     "lindenstr_satzkorn": {
@@ -6632,7 +6706,8 @@
         "strn": "Küsselstr.",
         "id": "kuesselstr",
         "synonyms": [
-            "Küsselstr."
+            "Küsselstr.",
+            "Küsselstraße"
         ]
     },
     "verkehrshof": {
@@ -6779,7 +6854,8 @@
         "strn": "Otto-Nagel-Str.",
         "id": "otto_nagel_str",
         "synonyms": [
-            "Otto-Nagel-Str."
+            "Otto-Nagel-Str.",
+            "Otto-Nagel-Straße"
         ]
     },
     "petri_heil": {
@@ -6926,7 +7002,8 @@
         "strn": "Von-Stechow-Str.",
         "id": "von_stechow_str",
         "synonyms": [
-            "Von-Stechow-Str."
+            "Von-Stechow-Str.",
+            "Von-Stechow-Straße"
         ]
     },
     "wagnerstr": {
@@ -7031,7 +7108,8 @@
         "strn": "Pietschkerstr.",
         "id": "pietschkerstr",
         "synonyms": [
-            "Pietschkerstr."
+            "Pietschkerstr.",
+            "Pietschkerstraße"
         ]
     },
     "plantagenstr": {
@@ -7066,7 +7144,8 @@
         "strn": "Reinhold-Schneider-Str.",
         "id": "reinhold_schneider_str",
         "synonyms": [
-            "Reinhold-Schneider-Str."
+            "Reinhold-Schneider-Str.",
+            "Reinhold-Schneider-Straße"
         ]
     },
     "reuterstr": {
@@ -7087,7 +7166,8 @@
         "strn": "Robert-Baberske-Str.",
         "id": "robert_baberske_str",
         "synonyms": [
-            "Robert-Baberske-Str."
+            "Robert-Baberske-Str.",
+            "Robert-Baberske-Straße"
         ]
     },
     "rosenstr": {
@@ -7122,7 +7202,8 @@
         "strn": "Semmelweisstr.",
         "id": "semmelweisstr",
         "synonyms": [
-            "Semmelweisstr."
+            "Semmelweisstr.",
+            "Semmelweisstraße"
         ]
     },
     "tannenstr": {
@@ -7185,7 +7266,8 @@
         "strn": "Wichgrafstr.",
         "id": "wichgrafstr",
         "synonyms": [
-            "Wichgrafstr."
+            "Wichgrafstr.",
+            "Wichgrafstraße"
         ]
     },
     "yorckstr": {

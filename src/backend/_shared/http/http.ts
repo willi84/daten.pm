@@ -98,8 +98,6 @@ export const getHttpStatusValue = (
     return httpItem['status'];
 };
 
-// TODO: test for
-
 /**
  * 🎯 get base http item for url
  * @param {string} url ➡️ The URL to check.
@@ -107,14 +105,28 @@ export const getHttpStatusValue = (
  * @returns {HeaderItem} 📤 The parsed HTTP status object.
 //  * @returns {HTTPStatusBase} 📤 The parsed HTTP status object.
  */
-export const getHttpBase = (url: string, timeout?: number): HTTPStatusBase => {
+export const getHttpBase = (
+    url: string,
+    // timeout?: number,
+    options: any = {}
+): HTTPStatusBase => {
     // TODO: return HeaderItem
+    const timeout = options.timeout as number | undefined;
     const oldTime = convertNumber2String(STANDARD_CURL_TIMEOUT);
     const newTime = convertNumber2String(timeout || STANDARD_CURL_TIMEOUT);
     let config = timeout
         ? CURL_CONFIG_STATUS.replace(oldTime, newTime)
         : CURL_CONFIG_STATUS;
-    const fullCommand = `curl -I ${url} ${config}`;
+    const method = options.method ? options.method.toUpperCase() : '';
+    if (method) {
+        config += ` -X ${method} `;
+    }
+    // const method = (options as any).method || '';
+    const finalURL = url;
+    // const finalURL = encodeURI(url);
+    // const finalURL = isEncoded ? url : encodeURI(url);
+    const fullCommand = `curl -I "${finalURL}" ${config}`;
+
     const header = command(`${fullCommand}`);
     // console.log(header)
     // const httpItem2 = getResponse(url);
@@ -147,7 +159,7 @@ export const getHttpItem = (
     if (forwarding) {
         while (forwarding) {
             redirects += 1;
-            httpItem = getHttpBase(url, timeout);
+            httpItem = getHttpBase(url, { timeout });
             if (redirects > maxRedirects) {
                 httpItem['maxRedirectsReached'] = 'true';
                 httpItem['lastStatus'] = httpItem['status'];
@@ -172,14 +184,14 @@ export const getHttpItem = (
             }
         }
     } else {
-        httpItem = getHttpBase(url, timeout);
+        httpItem = getHttpBase(url, { timeout });
         httpItem['lastLocation'] = url;
     }
     return httpItem;
 };
 
 /**
- *  get 🎯 full response for url
+ * 🎯 get full response for url
  * @todo refactor with getHttpItem
  * @param {string} url ➡️ The URL to fetch.
  * @param {object} [opts] ➡️ Optional settings (e.g., token, isDev).
@@ -215,7 +227,7 @@ export const getResponse = (url: string, opts: any = {}): CurlItem => {
     const ua = isGithubApi ? '' : customUA;
     // encodeURI important to avoid issues
     const finalCommand = `curl -s ${auth} ${ua} -i "${encodeURI(url)}" `;
-    console.log('finalCommand', finalCommand);
+    // console.log('finalCommand', finalCommand);
     const rawData = command(finalCommand);
     let data = rawData.replace(/^\n/, ''); // remove first empty line if exists
     const splitted = data.split(/\r?\n\r?\n/);
@@ -228,8 +240,14 @@ export const getResponse = (url: string, opts: any = {}): CurlItem => {
     // TODO: check if hasHeader for opencode
     const hasHeader =
         httpItem['status'] !== undefined && httpItem['status'] !== '0';
-    const content = hasHeader ? splitted.slice(1).join('\n') : data;
+    const hasData =
+        httpItem['status'] === '0' && Object.keys(httpItem).length === 1;
+    const contentItem = splitted.slice(1).join('\n');
+    const content = hasHeader ? contentItem : hasData ? data : '';
     const status = parseInt(httpItem.status, 10) || 0;
+    if (httpItem['status'] === '0') {
+        LOG.WARN(`no status code found. set to 0`);
+    }
     const success = status >= 200 && status < 400;
     if (isDev) {
         const type = success ? 'OK' : 'INFO';
@@ -279,7 +297,7 @@ export const getSLD = (url: string): SLD => {
 };
 /**
  * 🎯 get hostname of an url (e.g. api.example.com)
- * @param {URL} url  full url
+ * @param {URL} url ➡️ full url
  * @returns {HOSTNAME} 📤 hostname only
  */
 export const getHostname = (url: URL): HOSTNAME => {
@@ -290,21 +308,3 @@ export const getHostname = (url: URL): HOSTNAME => {
     result = result.replace(/([^\/]+)\/.*?$/, '$1'); // remove folder
     return result;
 };
-
-const foobar = (foo: number) => {   
-    return 'hellox';
-};
-
-function hello(foo: number) {   
-    return 'hello'; 
-}
-
-export function test(foo1: number, foo2: string) {
-    return 'test';
-}
-function x(asdfasd: string) {
-    return 'anon';
-}
-(lol: string) => {
-    return 'arrow' + lol;
-}

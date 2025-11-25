@@ -8,7 +8,7 @@
  */
 
 import { DOM } from './tools.d';
-import { clone, getFlagValue, isObject, selectAll, substitue } from './tools';
+import { clone, getFlagValue, isObject, selectAll, substitute } from './tools';
 import {
     deepMerge,
     detectType,
@@ -196,7 +196,7 @@ describe('✅ selectAll()', () => {
     });
 });
 describe('✅ substitue()', () => {
-    const FN = substitue;
+    const FN = substitute;
     it('substitues values in string', () => {
         const template = 'Hello {name}! Welcome 2 {place}.';
         const values = { name: 'Alice', place: 'Wonderland' };
@@ -206,6 +206,11 @@ describe('✅ substitue()', () => {
         const template = 'Hello, {name}! Welcome to {place}.';
         const values = { name: 'Bob' };
         expect(FN(template, values)).toBe('Hello, Bob! Welcome to {place}.');
+    });
+    it('stringifies non-string replacements', () => {
+        const template = '{count} Einträge aktiv={active}';
+        const values = { count: 3, active: false };
+        expect(substitute(template, values)).toBe('3 Einträge aktiv=false');
     });
 });
 describe('✅ getFlagValue()', () => {

@@ -8,7 +8,7 @@
  * @author Robert Willemelis <github.com/willi84>
  */
 
-import { HTTPStatusBase, OPTS, PlainObject } from '../..';
+import { CurlItem, HTTPStatusBase, OPTS, PlainObject } from '../../index.d';
 import { LOG } from '../log/log';
 import { MOCKED_RESPONSES_TYPE, MOCKED_URLS_TYPE } from './http.d';
 import { _header } from './http.mocks';
@@ -113,6 +113,13 @@ export const getResponseByUrl = (
     }
     return result;
 };
+/**
+ * 🎯 get response by url
+ * @param {string} url ➡️ The request URL.
+ * @param {string} content ➡️ The content to return.
+ * @param {OPTS} opts ➡️ Optional settings.
+ * @returns {string} 📤 The mocked response.
+ */
 export const getResponseByUrlNew = (
     url: string,
     content: string,
@@ -151,6 +158,11 @@ export const getMockedResponse = (
 export const MOCKED_RESPONSES: MOCKED_URLS_TYPE =
     normalizeResponses(MOCKED_HTTP_STATUS);
 
+/**
+ * 🎯 converts a key to kebap case
+ * @param {string} key ➡️ The header key.
+ * @returns {string} 📤 The kebap cased key.
+ */
 export const kebap = (key: string): string => {
     const result = key
         .replace(/([A-Z])/g, '-$1')
@@ -158,7 +170,16 @@ export const kebap = (key: string): string => {
     return result;
 };
 
-export const getResponseFromObject = (curlObject: HTTPStatusBase): string => {
+/**
+ * 🎯 create a http response from a curl object
+ * @param {CurlItem} curlObject ➡️ The curl response object.
+ * @param {string} content ➡️ The content to append. (optional)
+ * @returns {string} 📤 The full http response.
+ */
+export const getResponseFromObject = (
+    curlObject: CurlItem,
+    content?: string
+): string => {
     if (!curlObject || Object.keys(curlObject).length === 0) {
         console.log(curlObject);
         return '';
@@ -174,13 +195,43 @@ export const getResponseFromObject = (curlObject: HTTPStatusBase): string => {
     ];
     for (const key in curlObject) {
         if (listProtocol.indexOf(key.toLowerCase()) !== -1) {
+            // const isCurl = (curlObject as CurlItem).hasOwnProperty('header');
+            // if (!isCurl) {
+            //     console.log(curlObject);
+            // } else {
+            //     console.log((curlObject as CurlItem).header);
+            // }
+            const isCurlItem = curlObject.hasOwnProperty('header');
+            const header = isCurlItem
+                ? (curlObject.header as HTTPStatusBase)
+                : (curlObject as unknown as HTTPStatusBase);
             if (!hasMain) {
-                result += `${spaces}${curlObject.protocol.toUpperCase()}/${curlObject.protocolVersion} ${curlObject.status} ${curlObject.statusMessage}\r\n`;
+                if (header) {
+                    result += `${spaces}${header.protocol.toUpperCase()}/${header.protocolVersion} ${curlObject.status} ${header.statusMessage}\r\n`;
+                }
                 hasMain = true;
             }
         } else {
-            result += `${spaces}${kebap(key)}: ${curlObject[key]}\r\n`;
+            const item = (curlObject as Record<string, unknown>)[key];
+            if (item && ['header'].indexOf(key.toLowerCase()) === -1) {
+                result += `${spaces}${kebap(key)}: ${item}\r\n`;
+            } else {
+                const headerKeys = Object.keys(
+                    curlObject.header as HTTPStatusBase
+                );
+                headerKeys.forEach((headerKey: string) => {
+                    const headerItem = (
+                        curlObject.header as Record<string, unknown>
+                    )[headerKey];
+                    if (headerItem) {
+                        result += `${spaces}${kebap(headerKey)}: ${headerItem}\r\n`;
+                    }
+                });
+            }
         }
     }
-    return result + `${spaces}\n`;
+    const final = content
+        ? `${result}${spaces}\r\n\r\n${content}\n`
+        : `${result}${spaces}\n`;
+    return final;
 };

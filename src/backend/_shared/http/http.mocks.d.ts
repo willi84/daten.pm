@@ -15,3 +15,7 @@ export type MOCKED_RESPONSES_TYPE = {
 export type FORWARD_ELEMENTS = {
     [key: string]: { status: number; order: string[] };
 };
+export type NEXT_URL = {
+    url: string;
+    statusCode: number;
+};

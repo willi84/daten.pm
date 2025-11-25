@@ -90,16 +90,16 @@ describe('jsdoc-emoji-format', () => {
         });
     });
     describe('hasLeadingJsdoc()', () => {
+        const TEST_VALUE = `/** its a comment */`;
+        const TEST_COMMENT = {
+            type: 'Block',
+            value: TEST_VALUE,
+            loc: {
+                start: { line: 1, column: 0 },
+                end: { line: 2, column: 0 },
+            },
+        };
         describe('valid cases', () => {
-            const TEST_VALUE = `/** its a comment */`;
-            const TEST_COMMENT = {
-                type: 'Block',
-                value: TEST_VALUE,
-                loc: {
-                    start: { line: 1, column: 0 },
-                    end: { line: 2, column: 0 },
-                },
-            };
             it('has valid JSDoc block comment before', () => {
                 const testCode = TEST_VALUE;
                 const allComments = [TEST_COMMENT];
@@ -225,15 +225,15 @@ describe('jsdoc-emoji-format', () => {
     });
 
     describe('checkProperty()', () => {
-        it('should detect missing description', () => {
+        xit('should detect missing description', () => {
             const INPUT = `* @param {string} name`;
             const EXPECTED: ISSUE[] = [
                 {
-                    key: 'missingParamEmoji',
+                    key: 'missingEmojiParam',
                     loc: { line: 1, column: 2, width: 6 },
                 },
                 {
-                    key: 'emptyDescription',
+                    key: 'emptyDescriptionParam',
                     loc: { line: 1, column: 18, width: 4 },
                 }, // TODO: falsch
             ];

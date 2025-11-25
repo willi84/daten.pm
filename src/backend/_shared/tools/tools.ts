@@ -8,6 +8,7 @@
  * @author Robert Willemelis <github.com/willi84>
  */
 
+import { KEY_VALUES } from './tools.d';
 import { DOM, DOMS } from './tools.d';
 const NUM_VALUES = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.', ','];
 
@@ -148,16 +149,13 @@ export const selectAll = (query: string, target?: DOM): DOMS => {
 /**
  * 🎯 substitute placeholders in a string with values from an object
  * @param {string} str ➡️ The string containing placeholders.
- * @param {{ [key: string]: string }} replacements ➡️ An object with key-value pairs for replacements.
+ * @param {KEY_VALUES} replacements ➡️ An object with key-value pairs for replacements.
  * @returns {string} 📤 The modified string with placeholders replaced.
  */
-export const substitue = (
-    str: string,
-    replacements: { [key: string]: string }
-): string => {
+export const substitute = (str: string, replacements: KEY_VALUES): string => {
     return Object.keys(replacements).reduce((acc, key) => {
         const value = replacements[key];
-        return acc.replace(new RegExp(`{${key}}`, 'g'), value);
+        return acc.replace(new RegExp(`{${key}}`, 'g'), String(value));
     }, str);
 };
 

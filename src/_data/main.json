@@ -14,6 +14,11 @@
             "type": "button"
         },
         {
+            "text": "UDP",
+            "url": "udp",
+            "type": "button"
+        },
+        {
             "text": "Mängelmelder",
             "url": "civic_issues",
             "type": "button"

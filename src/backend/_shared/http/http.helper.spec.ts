@@ -168,5 +168,75 @@ yyy\r
             const result = FN(input);
             expect(result).toEqual(EXPECTED);
         });
+        it('should return extended 200 response', () => {
+            const input: any = {
+                ...setProtocolStatus(200),
+                contentLength: '76980',
+                lastModified: 'Mon, 18 Mar 2024 08:34:52 GMT',
+                // ETag: '"65f7fcac-12cb4"',
+                acceptRanges: 'bytes',
+                contentType: 'text/html; charset=UTF-8',
+                connection: 'keep-alive',
+                server: 'nginx/1.14.1',
+                date: 'Fri, 29 Mar 2024 21:28:51 GMT',
+                xFrameOptions: 'SAMEORIGIN',
+                strictTransportSecurity: 'max-age=31536000;',
+                referrerPolicy: 'no-referrer-when-downgrade',
+            };
+            const EXPECTED =
+                '\n' +
+                '        HTTP/1.1 200 OK\r\n' +
+                '        Content-Length: 76980\r\n' +
+                '        Last-Modified: Mon, 18 Mar 2024 08:34:52 GMT\r\n' +
+                // '        ETag: "65f7fcac-12cb4"\r\n' +
+                '        Accept-Ranges: bytes\r\n' +
+                '        Content-Type: text/html; charset=UTF-8\r\n' +
+                '        Connection: keep-alive\r\n' +
+                '        Server: nginx/1.14.1\r\n' +
+                '        Date: Fri, 29 Mar 2024 21:28:51 GMT\r\n' +
+                '        X-Frame-Options: SAMEORIGIN\r\n' +
+                '        Strict-Transport-Security: max-age=31536000;\r\n' +
+                '        Referrer-Policy: no-referrer-when-downgrade\r\n' +
+                '        \n';
+            const result = FN(input);
+            expect(result).toEqual(EXPECTED);
+        });
+        it('should return response with content', () => {
+            const input: any = {
+                ...setProtocolStatus(200),
+                contentType: 'application/json; charset=UTF-8',
+                connection: 'keep-alive',
+                server: 'Apache',
+                date: 'Mon, 24 Nov 2025 14:47:26 GMT',
+                contentLocation: 'reverse.php',
+                vary: 'negotiate',
+                tcn: 'choice',
+                xFrameOptions: 'SAMEORIGIN',
+                xPoweredBy: 'PHP/7.1.33',
+                accessControlAllowOrigin: '*',
+                accessControlAllowMethods: 'OPTIONS,GET',
+                contentLength: '29',
+            };
+            const content = `{"status":"data_found"}`;
+            const EXPECTED =
+                '\n' +
+                '        HTTP/1.1 200 OK\r\n' +
+                '        Content-Type: application/json; charset=UTF-8\r\n' +
+                '        Connection: keep-alive\r\n' +
+                '        Server: Apache\r\n' +
+                '        Date: Mon, 24 Nov 2025 14:47:26 GMT\r\n' +
+                '        Content-Location: reverse.php\r\n' +
+                '        Vary: negotiate\r\n' +
+                '        Tcn: choice\r\n' +
+                '        X-Frame-Options: SAMEORIGIN\r\n' +
+                '        X-Powered-By: PHP/7.1.33\r\n' +
+                '        Access-Control-Allow-Origin: *\r\n' +
+                '        Access-Control-Allow-Methods: OPTIONS,GET\r\n' +
+                '        Content-Length: 29\r\n' +
+                '        \r\n\r\n' +
+                '{"status":"data_found"}\n';
+            const result = FN(input, content);
+            expect(result).toEqual(EXPECTED);
+        });
     });
 });

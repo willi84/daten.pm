@@ -1,0 +1,262 @@
+---
+layout: base.template.njk
+title: UDP Endpunkte
+navigation: true
+footer: true
+---
+{%- from "./../templates/_setup/macros/component.macro.njk" import component -%}
+{% set datasets = udp or raw.udp or {} %}
+
+<div class="container-fluid my-5 text-center">
+    {{
+        component("image", {
+            image: main.logo.src,
+            class: "",
+            alt_prefix: main.logo.alt,
+            width: "25%",
+            height: "auto",
+            lazy: true
+        })
+    }}
+    <h2 class="mt-1">Urban Data Platform Endpunkte</h2>
+    <p class="text-muted">Direktlinks aus <code>udp.json</code> mit kopierbaren URLs und Format-Badges.</p>
+</div>
+
+<div class="container pb-5" data-search="udp">
+  <div class="row mb-3">
+    <div class="col-lg-6">
+      <label for="udp-search" class="form-label fw-semibold">Endpunkte filtern</label>
+      <input
+        id="udp-search"
+        class="form-control"
+        type="text"
+        placeholder="Nach Datensatz, Ressource oder Format suchen…"
+        aria-label="UDP-Endpunkte filtern"
+      />
+    </div>
+    <div class="col-md-3">
+      <label for="udp-format" class="form-label fw-semibold">Format</label>
+      <select id="udp-format" class="form-select">
+        <option value="">Alle Formate</option>
+      </select>
+    </div>
+    <div class="col-md-3">
+      <label for="udp-score" class="form-label fw-semibold">Qualität</label>
+      <select id="udp-score" class="form-select">
+        <option value="">Alle</option>
+        <option value="ok">OK (100)</option>
+        <option value="warn">Warning (≥60)</option>
+        <option value="bad">Rot (&lt;60)</option>
+      </select>
+    </div>
+  </div>
+
+  {% if datasets | length == 0 %}
+    <div class="alert alert-warning">Keine UDP-Daten gefunden.</div>
+  {% else %}
+    <div class="table-responsive shadow-sm rounded">
+      <table class="table table-sm align-middle mb-0 udp-table">
+        <thead class="table-light">
+          <tr>
+            <th scope="col" class="text-nowrap">Score</th>
+            <th scope="col">Datensatz</th>
+            <th scope="col">Ressource</th>
+            <th scope="col">Format</th>
+            <th scope="col" class="text-nowrap">Link</th>
+          </tr>
+        </thead>
+        <tbody id="udp-rows">
+          {% for id, dataset in datasets %}
+            {% set state = (dataset.state or '') | lower %}
+            {% set stateClass = 'bg-secondary-subtle text-secondary' %}
+            {% if state in ['active', 'aktiv'] %}
+              {% set stateClass = 'bg-success-subtle text-success-emphasis' %}
+            {% elseif state in ['inactive', 'archived'] %}
+              {% set stateClass = 'bg-warning-subtle text-warning-emphasis' %}
+            {% endif %}
+            {# Mini Lighthouse: start at 50, +25 für license_id, +25 für vorhandene Ressourcen #}
+            {% set hasLicense = dataset.license_id and (dataset.license_id | string | length > 0) %}
+            {% set hasResources = dataset.resources and (dataset.resources | length) > 0 %}
+            {% set score = 50 %}
+            {% if hasLicense %}
+              {% set score = score + 25 %}
+            {% else %}
+              {% set score = score - 25 %}
+            {% endif %}
+            {% if hasResources %}
+              {% set score = score + 25 %}
+            {% else %}
+              {% set score = score - 25 %}
+            {% endif %}
+            {% if score > 100 %}{% set score = 100 %}{% endif %}
+            {% if score < 0 %}{% set score = 0 %}{% endif %}
+
+            {% set scoreClass = 'bg-danger-subtle text-danger-emphasis' %}
+            {% set scoreCat = 'bad' %}
+            {% if score == 100 %}
+              {% set scoreClass = 'bg-success-subtle text-success-emphasis' %}
+              {% set scoreCat = 'ok' %}
+            {% elseif score >= 60 %}
+              {% set scoreClass = 'bg-warning-subtle text-warning-emphasis' %}
+              {% set scoreCat = 'warn' %}
+            {% endif %}
+
+            {% set rowTone = 'row-score-low' %}
+            {% if score == 100 %}
+              {% set rowTone = 'row-score-high' %}
+            {% elseif score >= 60 %}
+              {% set rowTone = 'row-score-mid' %}
+            {% endif %}
+            {% set formatsList = (dataset.resources or []) | map(attribute='format') | list %}
+            {% set searchText = (dataset.title or '') + ' ' + (dataset.name or '') + ' ' + (formatsList | join(' ')) %}
+            <tr
+              class="udp-row {{ rowTone }}"
+              data-search-text="{{ searchText | trim | replace('\"', '') }}"
+              data-format="{{ (formatsList | join(',') | lower) }}"
+              data-scorecat="{{ scoreCat }}"
+            >
+              <td class="text-nowrap score-col">
+                <div class="d-flex align-items-center gap-2">
+                  <span class="badge {{ scoreClass }}">{{ score }}</span>
+                </div>
+                <small class="text-muted d-block">
+                  {% if hasLicense %}License ✓{% else %}License ✗{% endif %} ·
+                  {% if hasResources %}Ressourcen ✓{% else %}Ressourcen ✗{% endif %}
+                </small>
+              </td>
+              <td class="dataset-col">
+                <div class="fw-semibold">{{ dataset.title or dataset.name or 'Ohne Titel' }}</div>
+                <div class="small text-muted">{{ dataset.name or '—' }}</div>
+                <div class="d-flex flex-wrap gap-1 mt-1">
+                  <span class="badge bg-light text-body-secondary border">ID: {{ id }}</span>
+                  {% if dataset.state %}
+                    <span class="badge {{ stateClass }}">{{ dataset.state }}</span>
+                  {% endif %}
+                </div>
+              </td>
+              <td class="resource-col">
+                <div class="d-flex flex-column gap-1">
+                  {% for res in dataset.resources or [] %}
+                    <div class="d-flex align-items-center gap-2 flex-wrap">
+                      <span class="fw-semibold small">{{ res.name or ('Ressource ' ~ loop.index) }}</span>
+                    </div>
+                  {% endfor %}
+                </div>
+              </td>
+              <td class="text-nowrap">
+                <div class="d-flex flex-wrap gap-1">
+                  {% for res in dataset.resources or [] %}
+                    <span class="badge bg-primary-subtle text-primary-emphasis border">{{ res.format or 'Format' }}</span>
+                  {% endfor %}
+                </div>
+              </td>
+              <td>
+                <div class="d-flex flex-column gap-1">
+                  {% for res in dataset.resources or [] %}
+                    <div class="d-flex gap-2 align-items-center flex-wrap">
+                      {% if res.url %}
+                        <a href="{{ res.url }}" class="btn btn-link px-0 small" target="_blank" rel="noreferrer">Öffnen</a>
+                        <button type="button" class="btn btn-outline-secondary btn-sm copy-link" data-url="{{ res.url }}">Kopieren</button>
+                      {% else %}
+                        <span class="text-muted small">Kein Link</span>
+                      {% endif %}
+                    </div>
+                  {% endfor %}
+                </div>
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  {% endif %}
+</div>
+
+<script>
+(function () {
+  const searchInput = document.getElementById('udp-search');
+  const formatSelect = document.getElementById('udp-format');
+  const scoreSelect = document.getElementById('udp-score');
+  const rows = Array.from(document.querySelectorAll('.udp-row'));
+  const copyButtons = document.querySelectorAll('.copy-link');
+
+  // Fill format options from data attributes
+  if (formatSelect) {
+    const formats = Array.from(
+      new Set(
+        rows
+          .flatMap(r => (r.dataset.format || '').split(','))
+          .map(f => f.trim())
+      )
+    ).filter(Boolean).sort();
+    formats.forEach(fmt => {
+      const opt = document.createElement('option');
+      opt.value = fmt;
+      opt.textContent = fmt.toUpperCase();
+      formatSelect.appendChild(opt);
+    });
+  }
+
+  function applyFilters() {
+    const term = (searchInput?.value || '').trim().toLowerCase();
+    const fmt = (formatSelect?.value || '').toLowerCase();
+    const scoreCat = (scoreSelect?.value || '').toLowerCase();
+
+    rows.forEach(row => {
+      const matchesSearch = !term || row.dataset.searchText.toLowerCase().includes(term);
+      const rowFormats = (row.dataset.format || '').toLowerCase().split(',');
+      const matchesFormat = !fmt || rowFormats.includes(fmt);
+      const matchesScore = !scoreCat || (row.dataset.scorecat || '').toLowerCase() === scoreCat;
+      const visible = matchesSearch && matchesFormat && matchesScore;
+      row.classList.toggle('d-none', !visible);
+    });
+  }
+
+  copyButtons.forEach((btn) => {
+    btn.addEventListener('click', async () => {
+      const url = btn.dataset.url;
+      if (!url) return;
+      const original = btn.textContent;
+
+      try {
+        await navigator.clipboard.writeText(url);
+        btn.textContent = 'Kopiert!';
+        btn.classList.remove('btn-outline-secondary');
+        btn.classList.add('btn-success', 'text-white');
+      } catch (_) {
+        btn.textContent = 'Fehler';
+        btn.classList.remove('btn-outline-secondary');
+        btn.classList.add('btn-danger', 'text-white');
+      } finally {
+        setTimeout(() => {
+          btn.textContent = original;
+          btn.classList.add('btn-outline-secondary');
+          btn.classList.remove('btn-success', 'btn-danger', 'text-white');
+        }, 1400);
+      }
+    });
+  });
+
+  searchInput?.addEventListener('input', applyFilters);
+  formatSelect?.addEventListener('change', applyFilters);
+  scoreSelect?.addEventListener('change', applyFilters);
+  applyFilters();
+})();
+</script>
+
+<style>
+  code {
+    word-break: break-all;
+  }
+  .badge {
+    letter-spacing: 0.01em;
+  }
+  .score-col { width: 100px; }
+  .dataset-col { min-width: 200px; max-width: 260px; }
+  .resource-col { min-width: 180px; max-width: 220px; }
+  .row-score-high { background: rgba(25, 135, 84, 0.08); }
+  .row-score-mid { background: rgba(255, 193, 7, 0.12); }
+  .row-score-low { background: rgba(220, 53, 69, 0.10); }
+  .udp-table td, .udp-table th { padding: .4rem .5rem; vertical-align: middle; }
+  .udp-table .fw-semibold { font-weight: 600; }
+</style>

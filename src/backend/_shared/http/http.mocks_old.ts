@@ -1,5 +1,5 @@
-import { HTTP_OBJECTS, NumericString } from '../..';
-import { DOMAIN_200, DOMAIN_UNKNOWN, STATUSCODES } from './http.config';
+import { HTTP_OBJECTS } from '../..';
+import { DOMAIN_200, DOMAIN_UNKNOWN } from './http.config';
 import { MOCKED_URLS_TYPE } from './http.d';
 import { setProtocolStatus } from './http.mocks';
 // import { DOMAIN_UNKNOWN } from './http.mocks';
@@ -167,6 +167,14 @@ export const HTTP_OBJECT: HTTP_OBJECTS = {
         connection: 'keep-alive',
         etag: '"6595577a-a30b"',
         contentType: 'text/html; charset=UTF-8',
+    },
+    HTTP_0: {
+        ...setProtocolStatus(0),
+        server: 'nginx/1.14.1',
+        date: DATE,
+        contentType: 'text/html; charset=UTF-8',
+        connection: 'keep-alive',
+        contentLength: '0',
     },
 };
 

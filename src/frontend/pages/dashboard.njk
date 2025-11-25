@@ -88,6 +88,7 @@ footer: true
               <div class="fw-semibold mb-2">
                 {{ street_value.strn }}
                 <span class="badge bg-light text-body-secondary border ms-2">ID: {{ street_value.id }}</span>
+                {# <span class="badge bg-light text-body-secondary border ms-2">data: {{dataSets | dump}}</span> #}
               </div>
 
               <ul class="mt-2 mb-0 ps-3">
@@ -108,7 +109,8 @@ footer: true
                     {# --- Civic Issues hübsch & kompakt --- #}
                     {% if dataSet == "civic_issues"%}
                     {% set issueCount = 0 %}
-                    {% for item in repos.civic_issues_final.items %}
+                    {% for item in repos.civic_issues.items %}
+                    {# {% for item in repos.civic_issues_final.items %} #}
                       {% if item.id and item.streetID and item.streetID == street_value.id %}
                         {% set issueCount = issueCount + 1 %}
                       {% endif %}
@@ -135,7 +137,8 @@ footer: true
                               </tr>
                             </thead>
                             <tbody>
-                              {% for item in repos.civic_issues_final.items %}
+                              {% for item in repos.civic_issues.items %}
+                              {# {% for item in repos.civic_issues_final.items %} #}
                                 {% if item.id and item.streetID and item.streetID == street_value.id %}
                                   {% set state = (item.state or 'unbekannt') | lower %}
                                   {% if state in ['offen','open','neu','new'] %}
@@ -266,6 +269,7 @@ footer: true
 
   // Auswahl via Button im Listeneintrag
   document.getElementById('dataset-list').addEventListener('click', (e) => {
+    console.log('clickcked')
     const btn = e.target.closest('.select-street');
     if (!btn) return;
     applySelectionById(btn.dataset.id, btn.dataset.name);

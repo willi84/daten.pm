@@ -9,12 +9,18 @@ import {
     FORWARDS,
     STATUSCODES,
 } from './http.config';
-import { getMockedResponse, getResponseFromObject } from './http.helper';
-import { PROTOCOL_STATUS } from './http.mocks.d';
+// import { getMockedResponse, getResponseFromObject } from './http.helper';
+import { NEXT_URL, PROTOCOL_STATUS } from './http.mocks.d';
 import * as cmd from '../cmd/cmd';
 import { $MOCK_VALUE } from './http.d';
 import { getHostname } from './http';
+import { getMockedResponse, getResponseFromObject } from './http.helper';
 // TODO: umschreiben
+/**
+ * 🎯 set the protocol status object
+ * @param {number} statusCode ➡️ The status code to set.
+ * @returns {PROTOCOL_STATUS} 📤 The protocol status object.
+ */
 export const setProtocolStatus = (statusCode: number): PROTOCOL_STATUS => {
     const statusMessage: string = STATUSCODES[`${statusCode}`].text;
     const status: NumericString = `${statusCode}` as NumericString;
@@ -26,10 +32,12 @@ export const setProtocolStatus = (statusCode: number): PROTOCOL_STATUS => {
     };
 };
 
-// export const getNextUrl = (url: string, statusCode: number): string => {
-export const getNextUrl = (
-    url: string
-): { url: string; statusCode: number } => {
+/**
+ * 🎯 get next url in the forwarding order
+ * @param {string} url ➡️ The current url.
+ * @return {NEXT_URL} 📤 next url item
+ */
+export const getNextUrl = (url: string): NEXT_URL => {
     if (!url) return { url, statusCode: 0 };
     const urlID = getHostname(url);
     const item = FORWARDS[urlID];
@@ -40,14 +48,11 @@ export const getNextUrl = (
     if (index > -1) {
         if (index === indexMax) {
             // last item
-            console.log(statusCode)
             return { url, statusCode };
-            // return url;
         } else {
             const nextIndex = index + 1;
             const nextUrl = order[nextIndex];
             if (nextUrl) {
-                console.log(statusCode, url, nextUrl)
                 return { url: nextUrl, statusCode: 301 };
             }
         }
@@ -55,6 +60,14 @@ export const getNextUrl = (
     return { url, statusCode };
 };
 
+/**
+ * 🎯 get the httpItem
+ * @param {string} url ➡️ The url to get the item for.
+ * @param {string} content ➡️ The content to append. (optional)
+ * @param {number} newStatusCode ➡️ The new status code to set. (optional)
+ * @param {boolean} fullResponse ➡️ Whether to return a full CurlItem response. Default is false.
+ * @returns {CurlItem} 📤 The http item or full response. // TODO: fix
+ */
 export const _httpItem = (
     url: string,
     content?: string,
@@ -119,9 +132,23 @@ const custom: { [key: number]: any } = {
     },
 };
 
+/**
+ * 🎯 get the response for a domain and statuscode
+ * @param {string} domain ➡️ The domain to get the response for.
+ * @param {number} statusCode ➡️ The status code to get the response for. (optional)
+ * @returns {string} 📤 The full http response.
+ */
 export const getRESPONSE = (domain: string, statusCode?: number): string => {
     const item = _httpItem(domain, undefined, statusCode);
-    return getResponseFromObject(item);
+    // if no CurlItem create one
+    const curlItem = {
+        header: item.header ? item.header : (item as HTTPStatusBase),
+        content: item.content ? item.content : '',
+        success: item.success ? item.success : false,
+        status: item.status ? item.status : '0',
+        time: item.time ? item.time : 0,
+    } as CurlItem;
+    return getResponseFromObject(curlItem);
 };
 
 export const DOMAIN_STATUS: { [key: string]: number } = {
@@ -133,6 +160,12 @@ export const DOMAIN_STATUS: { [key: string]: number } = {
     [DOMAIN_UNKNOWN]: 0,
 };
 
+/**
+ * 🎯 get the spy for an command
+ * @param {$MOCK_VALUE} result ➡️ The mock value to return. (optional)
+ * @param {number} version ➡️ The version of the mock to use. Default is 1.
+ * @returns {jest.SpyInstance} 📤 The spy instance.
+ */
 export const spyOnCommand = (
     result: $MOCK_VALUE = undefined,
     version: number = 1
@@ -145,7 +178,6 @@ export const spyOnCommand = (
                     ? result
                     : getMockedResponse(curl, version);
             } else {
-                console.log(curl);
                 return getMockedResponse(
                     curl,
                     version,
@@ -155,6 +187,11 @@ export const spyOnCommand = (
         });
 };
 
+/**
+ * 🎯 check if timeout is defined
+ * @param {string} curl ➡️ The curl command. //TODO
+ * @returns {boolean} 📤 Whether a timeout is defined.
+ */
 export const hasTimeout = (curl: string | undefined): boolean => {
     if (!curl) return false;
     const timeout = curl.match(/-m\s+(\d+\.\d+?)/);
@@ -165,12 +202,26 @@ export const hasTimeout = (curl: string | undefined): boolean => {
 };
 // export const getNextUrl = (url: string): string => {
 
+/**
+ * 🎯 get header of an response string.
+ * @param {string} domain ➡️ The domain to get the header for.
+ * @param {OPTS} opts ➡️ The options object. (optional)
+ * @returns {string} 📤 The http header.
+ */
 export const _header = (domain: string, opts: OPTS = {}): string => {
     if (!hasTimeout(opts?.request)) {
         return getRESPONSE(domain);
     }
     return getRESPONSE(domain, 0);
 };
+
+/**
+ * 🎯 get full response string
+ * @param {string} domain ➡️ The domain to get the response for.
+ * @param {number} statusCode ➡️ The status code to get the response for.
+ * @param {string} content ➡️ The content to append.
+ * @returns {string} 📤 The full http response.
+ */
 export const _response = (
     domain: string,
     statusCode: number,
