@@ -204,6 +204,7 @@ export const getResponse = (url: string, opts: any = {}): CurlItem => {
     const start = new Date().getTime();
     const isGithubApi = url.indexOf('api.github.com') !== -1;
     const isGitlabApi = url.indexOf('gitlab') !== -1;
+    const type = opts.type ? opts.type : ''
 
     if (isGithubApi && !token) {
         LOG.FAIL('Please set a GITHUB_TOKEN in the environment variables.');
@@ -226,7 +227,7 @@ export const getResponse = (url: string, opts: any = {}): CurlItem => {
 
     const ua = isGithubApi ? '' : customUA;
     // encodeURI important to avoid issues
-    const finalCommand = `curl -s ${auth} ${ua} -i "${encodeURI(url)}" `;
+    const finalCommand = `curl -s ${auth} ${ua} -i "${encodeURI(url)}" ${type} `;
     // console.log('finalCommand', finalCommand);
     const rawData = command(finalCommand);
 
